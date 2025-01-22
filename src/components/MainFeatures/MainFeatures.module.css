@@ -1,0 +1,16 @@
+.flexDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    height: 33%;
+}
