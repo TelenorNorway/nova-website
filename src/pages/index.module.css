@@ -1,8 +1,11 @@
 .main {
-    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 400px;
     grid-template-columns: 1fr;
     gap: 10px;
+}
+
+.logoContainer {
+    background-color: #000F3C;
 }

@@ -1,21 +1,29 @@
 import { graphql } from "gatsby"
-import React from 'react';
-import * as styles from './index.module.css'
+import React from "react"
+import * as styles from "./index.module.css"
+import Container from "../components/Container"
 import LogoDisplay from "../components/LogoDisplay"
 import MainTechnologies from "../components/MainTechnologies"
 import MainFeatures from "../components/MainFeatures"
 import AboutTelenor from "../components/AboutTelenor"
 import Seo from "../components/seo"
 
-
 const Index = () => (
-    <main className={styles.main}>
-        <LogoDisplay />
-        <MainFeatures />
-        <MainTechnologies />
-        <AboutTelenor />
-    </main>
-);  
+  <main className={styles.main}>
+    <Container className={styles.logoContainer}>
+      <LogoDisplay />
+    </Container>
+    <Container>
+      <MainFeatures />
+    </Container>
+    <Container>
+      <MainTechnologies />
+    </Container>
+    <Container>
+      <AboutTelenor />
+    </Container>
+  </main>
+)
 
 export default Index
 
