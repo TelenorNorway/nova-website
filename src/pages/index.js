@@ -6,13 +6,12 @@ import LogoDisplay from "../components/LogoDisplay"
 import MainTechnologies from "../components/MainTechnologies"
 import MainFeatures from "../components/MainFeatures"
 import AboutTelenor from "../components/AboutTelenor"
+import Footer from "../components/Footer"
 import Seo from "../components/seo"
 
 const Index = () => (
   <main className={styles.main}>
-    <Container className={styles.logoContainer}>
-      <LogoDisplay />
-    </Container>
+    <LogoDisplay />
     <Container>
       <MainFeatures />
     </Container>
@@ -21,6 +20,9 @@ const Index = () => (
     </Container>
     <Container>
       <AboutTelenor />
+    </Container>
+    <Container className={styles.footerContainer}>
+      <Footer />
     </Container>
   </main>
 )
