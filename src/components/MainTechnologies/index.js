@@ -1,9 +1,9 @@
 import React from "react"
-import * as styles from "./styles.module.css"
+import * as styles from "./MainFeatures.module.css"
 
-const MainDataPlatformFeatures = () => (
+const MainFeatures = () => (
   <div>
-    <h2>A Modern Data Platform</h2>
+    <h2>Cutting-edge Technologies</h2>
     <div className={styles.flexDisplay}>
       <div className={styles.content}>
         <img src="./clouds.png" alt="cloud platforms" className={styles.img} />
@@ -28,4 +28,4 @@ const MainDataPlatformFeatures = () => (
   </div>
 )
 
-export default MainDataPlatformFeatures
+export default MainFeatures

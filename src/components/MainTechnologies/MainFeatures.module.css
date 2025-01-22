@@ -1,0 +1,25 @@
+.flexDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    background-color: #E8FDFF;
+    border-radius: 10%;
+}
+
+.img {
+    width: 100%;
+}
+
+.text {
+    color: #000F3C;
+    text-align: center;
+    width: 90%;
+}

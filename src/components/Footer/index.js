@@ -9,11 +9,16 @@ const Footer = () => (
     </div>
     <ul className={styles.linksContainer}>
       <li>
+        <a href="https://www.telenor.no" target="_blank">
+            Telenor.no
+        </a>
+      </li>
+      <li>
         <a href="https://www.telenor.no/om/jobbitelenor/" target="_blank">
           Jobb hos oss
         </a>
       </li>
-      <li>Tilgjengelighetserklæring</li>
+      <li>Tilgjengelighetserklæring (TODO)</li>
     </ul>
   </footer>
 )

@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import * as styles from "../pages/index.module.css"
 
+import LogoDisplay from "../components/LogoDisplay"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -12,6 +14,8 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
+    <main className={styles.main}>
+      <LogoDisplay />
     <Layout location={location} title={siteTitle}>
       <article
         className="blog-post"
@@ -58,6 +62,7 @@ const BlogPostTemplate = ({
         </ul>
       </nav>
     </Layout>
+    </main>
   )
 }
 
