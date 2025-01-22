@@ -1,5 +1,11 @@
 .img {
-    display: block;
     margin: 0 auto;
     width: 600px;
+}
+
+.logoFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 }
