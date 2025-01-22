@@ -9,11 +9,11 @@ const MainFeatures = () => (
         </div>
         <div className={styles.content}>
             <img src="./nordic.png" alt="nordic countries" className={styles.img} />
-            <p className={styles.text}>Nova is used in all the nordic countries running thousands of workloads!</p>
+            <p className={styles.text}>Nova is used in all the nordic countries running tens of thousands of workloads!</p>
         </div>
         <div className={styles.content}>
             <img src="./sec.png" alt="womp1" className={styles.img} />
-            <p className={styles.text}>Nova is built on Telenors security principles</p>
+            <p className={styles.text}>Nova is built on Telenors best practice security principles, such as defendable architecture </p>
         </div>
     </div>
 );
