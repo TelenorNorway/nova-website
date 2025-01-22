@@ -3,26 +3,25 @@ import * as styles from "./MainFeatures.module.css"
 
 const MainFeatures = () => (
   <div>
-    <h2>A beloved platform</h2>
+    <h2>Cutting-edge Technologies</h2>
     <div className={styles.flexDisplay}>
       <div className={styles.content}>
         <img src="./clouds.png" alt="cloud platforms" className={styles.img} />
         <p className={styles.text}>
-          The Nova platforms runs on Azure and GCP allowing you flexibility
-          between the different cloud providers
+          Unified data platform for the Nordics, minimizing data silos and
+          accelerating growth
         </p>
       </div>
       <div className={styles.content}>
         <img src="./nordic.png" alt="nordic countries" className={styles.img} />
         <p className={styles.text}>
-          Nova is used in all the nordic countries running thousands of
-          workloads!
+          Data driven organization with unified data governance and catalog
         </p>
       </div>
       <div className={styles.content}>
         <img src="./sec.png" alt="womp1" className={styles.img} />
         <p className={styles.text}>
-          Nova is built on Telenors security principles
+          Data democracy, distributed ownership of data products
         </p>
       </div>
     </div>
