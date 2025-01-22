@@ -4,8 +4,9 @@
     grid-template-rows: 400px;
     grid-template-columns: 1fr;
     gap: 10px;
+    min-height: 100vh;
 }
 
-.logoContainer {
+.logoContainer, .footerContainer {
     background-color: #000F3C;
 }
