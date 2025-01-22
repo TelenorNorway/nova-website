@@ -1,0 +1,28 @@
+.container {
+    padding: 48px 32px;
+    background: #000b2e;
+}
+
+.logoContainer {
+    margin: 0 auto;
+    max-width: 1190px;
+    padding-bottom: 48px;
+}
+
+.img {
+    height: 40px;
+    width: 44px;
+}
+
+.linksContainer {
+    list-style: none;
+    color: #e5e8f0;
+}
+
+.linksContainer a {
+    text-decoration: none;
+    color: #e5e8f0;
+}
+
+.linksContainer > li {
+}

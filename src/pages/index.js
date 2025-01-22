@@ -4,6 +4,7 @@ import * as styles from "./index.module.css"
 import Container from "../components/Container"
 import LogoDisplay from "../components/LogoDisplay"
 import MainTechnologies from "../components/MainTechnologies"
+import MainDataPlatformFeatures from "../components/MainDataPlatformFeatures"
 import MainFeatures from "../components/MainFeatures"
 import AboutTelenor from "../components/AboutTelenor"
 import Footer from "../components/Footer"
@@ -16,14 +17,15 @@ const Index = () => (
       <MainFeatures />
     </Container>
     <Container>
+      <MainDataPlatformFeatures />
+    </Container>
+    <Container>
       <MainTechnologies />
     </Container>
     <Container>
       <AboutTelenor />
     </Container>
-    <Container className={styles.footerContainer}>
-      <Footer />
-    </Container>
+    <Footer />
   </main>
 )
 
