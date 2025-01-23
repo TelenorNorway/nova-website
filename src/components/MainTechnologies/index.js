@@ -13,7 +13,7 @@ const MainTechnologies = () => (
         </p>
       </div>
       <div className={styles.content}>
-        <img src="./nordic.png" alt="nordic countries" className={styles.img} />
+        <img src="./git.png" alt="nordic countries" className={styles.img} />
         <p className={styles.text}>
           The Nova platform embraces GitOps ensuring that our infrastructure and
           applications are always in sync with our codebase. We maintain popular
@@ -21,7 +21,7 @@ const MainTechnologies = () => (
         </p>
       </div>
       <div className={styles.content}>
-        <img src="./sec.png" alt="womp1" className={styles.img} />
+        <img src="./golang.png" alt="womp1" className={styles.img} />
         <p className={styles.text}>
           Nova develops several Golang applications as part of the platform
           offering, taking advantage of its performance, concurrency, and

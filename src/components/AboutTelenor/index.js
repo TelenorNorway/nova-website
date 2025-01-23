@@ -11,21 +11,21 @@ const AboutTelenor = () => (
             <body className={styles.text}>
                 <h1>About Telenor</h1>
                 <p>
-                    Telenor Norge er landets største digitale tjenesteleverandør innenfor mobil,
-                    bredbånd og TV-tjenester. Hver dag jobber vi for å lede an i digitaliseringen
-                    av Norge og utvikle de beste digitale sikkerhetstjenestene for våre kunder.
+                    Telenor is the country's largest digital service provider within mobile,
+                    broadband and TV services. Every day we work to lead the way in digitalisation
+                    and develop the best digital security services for our customers.
                 </p>
                 <p>
-                    Telenor Norge har i underkant av 3000 medarbeidere fordelt på 20 kontorer i
-                    Norge, og er en del av Telenor Group, som har virksomhet i åtte land. Våre tjenester og produkter
-                    bidrar til økt produktivitet og gir tilgang til alt av digitalt innhold. Vår sikkerhets- og
-                    beredskapsorganisasjon jobber døgnkontinuerlig med å trygge våre kunder, og vi tar et særlig
-                    samfunnsansvar for å skape trygghet for barn og unge på nett. Vår teknologi er en viktig
-                    bidragsyter til det grønne skiftet. I tillegg til å kutte egne utslipp, hjelper vi andre til å
-                    redusere sine ved bruk av våre tjenester.
+                    Telenor has just under 3,000 employees spread over 20 offices in
+                    Norway, and is part of the Telenor Group, which has operations in eight countries. Our services and products
+                    contributes to increased productivity and provides access to all digital content. Our security and
+                    emergency response organization works 24/7 to keep our customers safe, and we take special care of
+                    social responsibility to create safety for children and young people online. Our technology is an important
+                    contributor to the green shift. In addition to cutting our own emissions, we help others to
+                    reduce their when using our services.
                 </p>
                 <p>
-                    Hovedkontoret vårt ligger på Fornebu i Bærum.
+                    Our headquarters is located at Fornebu in Bærum.
                 </p>
             </body>
         </div>
