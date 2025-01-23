@@ -5,6 +5,7 @@
     grid-template-columns: 1fr;
     gap: 10px;
     min-height: 100vh;
+    background-color: #F9F9FB;
 }
 
 .main h2 {
