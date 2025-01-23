@@ -8,15 +8,18 @@ import MainFeatures from "../components/MainFeatures"
 import AboutTelenor from "../components/AboutTelenor"
 import Seo from "../components/seo"
 import Layout from "../components/Layout"
+import Divider from "../components/Divider"
 
 const Index = () => (
   <Layout className={styles.main}>
     <Container>
       <MainFeatures />
     </Container>
+    <Divider />
     <Container>
       <MainTechnologies />
     </Container>
+      <Divider />
     <Container>
       <MainDataPlatformFeatures />
     </Container>

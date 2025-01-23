@@ -1,0 +1,19 @@
+.divider {
+    margin-top: 32px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.dividerLine {
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+}
+
+.dark {
+    background: #4f5a7d;
+}
+
+.light {
+    background: #b2bad1;
+}
