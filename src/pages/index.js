@@ -2,17 +2,15 @@ import { graphql } from "gatsby"
 import React from "react"
 import * as styles from "./index.module.css"
 import Container from "../components/Container"
-import LogoDisplay from "../components/LogoDisplay"
 import MainTechnologies from "../components/MainTechnologies"
 import MainDataPlatformFeatures from "../components/MainDataPlatformFeatures"
 import MainFeatures from "../components/MainFeatures"
 import AboutTelenor from "../components/AboutTelenor"
-import Footer from "../components/Footer"
 import Seo from "../components/seo"
+import Layout from "../components/layout"
 
 const Index = () => (
-  <main className={styles.main}>
-    <LogoDisplay />
+  <Layout className={styles.main}>
     <Container>
       <MainFeatures />
     </Container>
@@ -25,8 +23,7 @@ const Index = () => (
     <Container>
       <AboutTelenor />
     </Container>
-    <Footer />
-  </main>
+  </Layout>
 )
 
 export default Index

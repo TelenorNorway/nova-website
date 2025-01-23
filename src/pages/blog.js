@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import * as styles from "./blog.module.css"
 
-import * as styles from "./index.module.css"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import LogoDisplay from "../components/LogoDisplay"
+import Container from "../components/Container"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -25,9 +25,8 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <main className={styles.main}>
-      <LogoDisplay />
-      <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
+      <Container className={styles.blogList}>
         <Bio />
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
@@ -61,8 +60,8 @@ const BlogIndex = ({ data, location }) => {
             )
           })}
         </ol>
-      </Layout>
-    </main>
+      </Container>
+    </Layout>
   )
 }
 

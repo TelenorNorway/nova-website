@@ -1,5 +1,6 @@
 import React from "react";
 import * as styles from "./LogoDisplay.module.css"
+import { Link } from "gatsby"
 import backgroundTexture from "./backgroundTextureDark.mp4"
 
 const LogoDisplay = () => (
@@ -7,9 +8,9 @@ const LogoDisplay = () => (
         <video autoPlay muted loop className={styles.video}>
             <source src={backgroundTexture} type="video/mp4" />
         </video>
-        <div className={styles.logoFlex}>
+        <Link to="/" className={styles.logoFlex}>
             <img src="/logoWhite.png" alt="Telenor" className={styles.img} />
-        </div>
+        </Link>
     </div>
 );
 
