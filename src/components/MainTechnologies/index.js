@@ -1,12 +1,13 @@
 import React from "react"
 import * as styles from "./MainFeatures.module.css"
+import cloudnative from "./cloudnative.png"
 
 const MainTechnologies = () => (
   <div>
     <h2>Cutting-edge Technologies</h2>
     <div className={styles.flexDisplay}>
       <div className={styles.content}>
-        <img src="./clouds.png" alt="cloud platforms" className={styles.img} />
+        <img src={cloudnative} alt="cloud platforms" className={styles.img} />
         <p className={styles.text}>
           Nova is a modern platform that leverages the latest in cloud-native
           technologies to provide a scalable, reliable, and efficient platform.
