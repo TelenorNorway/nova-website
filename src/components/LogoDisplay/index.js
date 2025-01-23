@@ -10,7 +10,7 @@ const LogoDisplay = () => (
         </video>
         <Link to="/" className={styles.logoFlex}>
             <img src="/logoWhite.png" alt="Telenor" className={styles.img} />
-        </Link>
+            <img src="/telenorsmall.png" alt="Telenor" className={styles.imgSmall} />        </Link>
     </div>
 );
 
