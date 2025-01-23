@@ -7,7 +7,7 @@ import MainDataPlatformFeatures from "../components/MainDataPlatformFeatures"
 import MainFeatures from "../components/MainFeatures"
 import AboutTelenor from "../components/AboutTelenor"
 import Seo from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const Index = () => (
   <Layout className={styles.main}>
