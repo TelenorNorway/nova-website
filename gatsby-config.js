@@ -8,7 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: "/s07373-nova-website",
   siteMetadata: {
     title: 'Nova',
     author: {
