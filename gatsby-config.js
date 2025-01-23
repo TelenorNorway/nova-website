@@ -12,10 +12,10 @@ module.exports = {
     title: 'Nova',
     author: {
       name: 'The Nova Team',
-      summary: `who works from Fornebu, Norway to make the best cloud platform in the nordics.`,
+      summary: `who works to make the best cloud platform in the nordics.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: "Telenor's Nova team tech blog",
+    siteUrl: `https://nova.eliine.dev`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -107,15 +107,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: 'The Nova Platform Tech Blog',
+        short_name: `Nova`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/logo.png`, // This path is relative to the root of the site.
       },
     },
   ],
