@@ -8,20 +8,19 @@ const MainFeatures = () => (
       <div className={styles.content}>
         <img src="./clouds.png" alt="cloud platforms" className={styles.img} />
         <p className={styles.text}>
-          Unified data platform for the Nordics, minimizing data silos and
-          accelerating growth
+         Nova is a modern platform that leverages the latest in cloud-native technologies to provide a scalable, reliable, and efficient platform.
         </p>
       </div>
       <div className={styles.content}>
         <img src="./nordic.png" alt="nordic countries" className={styles.img} />
         <p className={styles.text}>
-          Data driven organization with unified data governance and catalog
+          The Nova platform embraces GitOps ensuring that our infrastructure and applications are always in sync with our codebase. We maintain popular open source GitOps components and architectures.
         </p>
       </div>
       <div className={styles.content}>
         <img src="./sec.png" alt="womp1" className={styles.img} />
         <p className={styles.text}>
-          Data democracy, distributed ownership of data products
+          Golang
         </p>
       </div>
     </div>

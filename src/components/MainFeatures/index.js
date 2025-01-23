@@ -3,7 +3,7 @@ import * as styles from "./MainFeatures.module.css"
 
 const MainFeatures = () => (
     <div>
-        <h2>A beloved platform</h2>
+        <h2>Telenor's cloud platform</h2>
         <div className={styles.flexDisplay}>
             <div className={styles.content}>
                 <img src="./clouds.png" alt="cloud platforms" className={styles.img} />

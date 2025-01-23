@@ -17,10 +17,10 @@ const Index = () => (
       <MainFeatures />
     </Container>
     <Container>
-      <MainDataPlatformFeatures />
+      <MainTechnologies />
     </Container>
     <Container>
-      <MainTechnologies />
+      <MainDataPlatformFeatures />
     </Container>
     <Container>
       <AboutTelenor />
