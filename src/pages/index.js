@@ -36,7 +36,7 @@ export default Index
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Nova" />
+export const Head = () => <Seo title="Telenor's application platform" />
 
 export const pageQuery = graphql`
   {

@@ -11,7 +11,7 @@ const MainFeatures = () => (
                 </div>
                 <div className={styles.txtcontainer}>
                     <p className={styles.text}>
-                        The Nova platforms runs on Azure and GCP allowing you flexibility
+                        The Telenor's application platform platforms runs on Azure and GCP allowing you flexibility
                         between the different cloud providers
                     </p>
                 </div>
@@ -22,7 +22,7 @@ const MainFeatures = () => (
                 </div>
                 <div className={styles.txtcontainer}>
                     <p className={styles.text}>
-                        Nova is used in all the nordic countries running thousands of
+                        Telenor's application platform is used in all the nordic countries running thousands of
                         workloads!
                     </p>
                 </div>
@@ -33,7 +33,7 @@ const MainFeatures = () => (
                 </div>
                 <div className={styles.txtcontainer}>
                     <p className={styles.text}>
-                        Nova is built on Telenors security principles
+                        Telenor's application platform is built on Telenors security principles
                     </p>
                 </div>
 

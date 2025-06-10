@@ -12,7 +12,7 @@ const MainTechnologies = () => (
         </div>
         <div className={styles.txtcontainer}>
           <p className={styles.text}>
-            Nova is a modern platform that leverages the latest in cloud-native
+            Telenor's application platform is a modern platform that leverages the latest in cloud-native
             technologies to provide a scalable, reliable, and efficient platform.
           </p>
         </div>
@@ -23,7 +23,7 @@ const MainTechnologies = () => (
         </div>
         <div className={styles.txtcontainer}>
           <p className={styles.text}>
-            The Nova platform embraces GitOps ensuring that our infrastructure and
+            The Telenor's application platform platform embraces GitOps ensuring that our infrastructure and
             applications are always in sync with our codebase. We maintain popular
             open source GitOps components and architectures.
           </p>
@@ -35,7 +35,7 @@ const MainTechnologies = () => (
         </div>
         <div className={styles.txtcontainer}>
           <p className={styles.text}>
-            Nova develops several Golang applications as part of the platform
+            Telenor's application platform develops several Golang applications as part of the platform
             offering, taking advantage of its performance, concurrency, and
             simplicity.
           </p>

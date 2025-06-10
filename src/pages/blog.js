@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Container className={styles.blogList}>
-        <h1>The Nova Tech Blog</h1>
+        <h1>The Telenor's application platform Tech Blog</h1>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
