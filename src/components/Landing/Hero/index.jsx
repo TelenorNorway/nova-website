@@ -9,17 +9,27 @@ routes:
 
 const Hero = () => {
     return (
-        <section className={hero}>
-            <div className={heroCopy}>
-                <h1 className={heroH1}>The&nbsp;cloud‑native platform for Kubernetes.</h1>
-                <button className={ctaBtn}>Get Started</button>
-                <pre className={codeSnippet}><code>{codeSnippetString}</code></pre>
-                {/*<pre className={codeSnippet}><code>kubectl apply -f mast.yaml</code></pre>*/}
-            </div>
-            <div className={heroIllus}>
-                <img className={spire} src={iconSrc} alt="Shippy the pup smiles at you" />
-            </div>
-        </section>
+      <section className={hero}>
+        <div className={heroCopy}>
+          <h1 className={heroH1}>
+            The&nbsp;cloud‑native platform for Kubernetes.
+          </h1>
+          <button className={ctaBtn}>Get Started</button>
+        </div>
+        <div className={heroIllus}>
+          <div>
+            <pre className={codeSnippet}>
+              <code>{codeSnippetString}</code>
+            </pre>
+            {/*<pre className={codeSnippet}><code>kubectl apply -f mast.yaml</code></pre>*/}
+          </div>
+          <img
+            className={spire}
+            src={iconSrc}
+            alt="Shippy the pup smiles at you"
+          />
+        </div>
+      </section>
     );
 }
 
