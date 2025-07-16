@@ -1,32 +1,28 @@
-import cx from 'classnames';
-import {wrapper} from './styles.css';
+import cx from "classnames";
+import { hero, features, feature, featureIcon, featureHeading, featureParagraph } from './styles.css';
 
-const Heading = () => {
+const Features = () => {
     return (
-      <div className={wrapper}>
-        <div>
-          <Heading />
-        </div>
-        <div>
-          <div>
-            <Feature 
-              title="Telenor's Cloud Platform"
-              description="The sweet symphony of multiplatform and cutting edge Technologies"
-            />
-          </div>
-        </div>
-      </div>
+        <section className={hero} id="features" style={{ paddingTop: 0 }}>
+            <div className={features}>
+                <div className={feature}>
+                    <div className={featureIcon}>📡</div>
+                    <h3 className={featureHeading}>Plug‑and‑play K8s</h3>
+                    <p className={featureParagraph}>Deploy and manage clusters with a single command.</p>
+                </div>
+                <div className={feature}>
+                    <div className={featureIcon}>🚀</div>
+                    <h3 className={featureHeading}>Zero‑to‑prod in minutes</h3>
+                    <p className={featureParagraph}>Get your applications running quickly and reliably.</p>
+                </div>
+                <div className={feature}>
+                    <div className={featureIcon}>📊</div>
+                    <h3 className={featureHeading}>Ops insight</h3>
+                    <p className={featureParagraph}>Gain deep visibility into your workloads and costs.</p>
+                </div>
+            </div>
+        </section>
     );
-}
+};
 
-const Feature = ({ logo, title, description }) => {
-  return (
-    <div>
-      <img src={logo} alt="Feature Logo" />
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </div>
-  );
-}
-
-export default Heading;
+export default Features;

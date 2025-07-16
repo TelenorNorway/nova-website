@@ -1,12 +1,13 @@
-import Heading from "./Heading";
+import Header from "./Header";
+import Hero from "./Hero";
 import Features from "./Features";
 import { container } from './styles.css.ts';
 
 const Landing = () => {
     return (
         <div className={container}>
-            <Heading />
-            <hr />
+            <Header />
+            <Hero />
             <Features />
         </div>
     );
