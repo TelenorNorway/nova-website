@@ -7,7 +7,7 @@ export const hero = style({
     maxWidth: '1400px',
     width: '100%',
     margin: '40px auto 0',
-    padding: '0 48px 96px',
+    padding: '0 48px 56px',
 });
 
 export const heroCopy = style({
@@ -45,7 +45,7 @@ export const heroIllus = style({
 });
 
 export const spire = style({
-    height: '260px',
+    height: '300px',
     position: 'relative',
 });
 

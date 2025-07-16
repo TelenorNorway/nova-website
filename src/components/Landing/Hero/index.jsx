@@ -1,6 +1,11 @@
-import cx from 'classnames';
-import iconSrc from './img/icon3.png';
+import iconSrc from './img/shippy6.png';
 import { hero, heroCopy, heroH1, ctaBtn, codeSnippet, heroIllus, spire } from './styles.css';   
+
+const codeSnippetString = `# my-app.yaml
+image: myapp:1.2
+routes:
+  - url: myapp.example.com
+    route: /api`;
 
 const Hero = () => {
     return (
@@ -8,10 +13,11 @@ const Hero = () => {
             <div className={heroCopy}>
                 <h1 className={heroH1}>The&nbsp;cloud‑native platform for Kubernetes.</h1>
                 <button className={ctaBtn}>Get Started</button>
+                <pre className={codeSnippet}><code>{codeSnippetString}</code></pre>
                 {/*<pre className={codeSnippet}><code>kubectl apply -f mast.yaml</code></pre>*/}
             </div>
             <div className={heroIllus}>
-                <img className={spire} src={iconSrc} />
+                <img className={spire} src={iconSrc} alt="Shippy the pup smiles at you" />
             </div>
         </section>
     );

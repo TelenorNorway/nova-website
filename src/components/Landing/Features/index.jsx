@@ -1,25 +1,27 @@
 import cx from "classnames";
 import { hero, features, feature, featureIcon, featureHeading, featureParagraph } from './styles.css';
 
+const Feature = ({ icon, heading, children }) => (
+    <div className={feature}>
+        <div className={featureIcon}>{icon}</div>
+        <h3 className={featureHeading}>{heading}</h3>
+        <p className={featureParagraph}>{children}</p>
+    </div>
+);
+
 const Features = () => {
     return (
         <section className={hero} id="features" style={{ paddingTop: 0 }}>
             <div className={features}>
-                <div className={feature}>
-                    <div className={featureIcon}>📡</div>
-                    <h3 className={featureHeading}>Plug‑and‑play K8s</h3>
-                    <p className={featureParagraph}>Deploy and manage clusters with a single command.</p>
-                </div>
-                <div className={feature}>
-                    <div className={featureIcon}>🚀</div>
-                    <h3 className={featureHeading}>Zero‑to‑prod in minutes</h3>
-                    <p className={featureParagraph}>Get your applications running quickly and reliably.</p>
-                </div>
-                <div className={feature}>
-                    <div className={featureIcon}>📊</div>
-                    <h3 className={featureHeading}>Ops insight</h3>
-                    <p className={featureParagraph}>Gain deep visibility into your workloads and costs.</p>
-                </div>
+                <Feature icon="🚀" heading="Zero‑to‑prod in minutes">
+                    Get your applications to customers quickly and reliably
+                </Feature>
+                <Feature icon="🔒" heading="Feel safe">
+                    As a company managing critical infrastructure, Telenor has a proven security posture
+                </Feature>
+                <Feature icon="📡" heading="Catalyst for organizational transformation">
+                    Transform how your organization approaches software development
+                </Feature>
             </div>
         </section>
     );
