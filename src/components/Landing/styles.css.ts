@@ -1,7 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
 const light = "#ffffff";
-const bgGrad = "linear-gradient(135deg, #100046 0%, #1800CE 50%, #351AD7 100%)";
 
 export const container = style({
     fontFamily: "Inter, sans-serif",
