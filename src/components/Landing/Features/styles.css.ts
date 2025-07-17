@@ -1,20 +1,31 @@
 import { style } from '@vanilla-extract/css';
 
 
-export const hero = style({
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    maxWidth: '1400px',
-    width: '100%',
-    margin: '40px auto 0',
-    padding: '0 48px 96px',
+export const container = style({
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "flex-start",
+  maxWidth: "1400px",
+  width: "100%",
+  margin: "40px auto 0",
+  padding: "0 48px 96px",
+  "@media": {
+    "screen and (max-width: 768px)": {
+      flexDirection: "column",
+      padding: "0 28px 56px",
+    },
+  },
 });
 
 export const features = style({
-    display: 'flex',
-    gap: '24px',
-    flexWrap: 'nowrap',
+  display: "flex",
+  gap: "24px",
+  flexWrap: "nowrap",
+  "@media": {
+    "screen and (max-width: 768px)": {
+      flexDirection: "column",
+    },
+  },
 });
 
 export const feature = style({

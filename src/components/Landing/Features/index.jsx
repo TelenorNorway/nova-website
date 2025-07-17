@@ -1,5 +1,4 @@
-import cx from "classnames";
-import { hero, features, feature, featureIcon, featureHeading, featureParagraph } from './styles.css';
+import { container, features, feature, featureIcon, featureHeading, featureParagraph } from './styles.css';
 
 const Feature = ({ icon, heading, children }) => (
     <div className={feature}>
@@ -11,12 +10,12 @@ const Feature = ({ icon, heading, children }) => (
 
 const Features = () => {
     return (
-        <section className={hero} id="features" style={{ paddingTop: 0 }}>
+        <section className={container} id="features" style={{ paddingTop: 0 }}>
             <div className={features}>
                 <Feature icon="🚀" heading="Zero‑to‑prod in minutes">
                     Get your applications to customers quickly and reliably
                 </Feature>
-                <Feature icon="🔒" heading="Feel safe">
+                <Feature icon="🔒" heading="Move fast and feel safe">
                     As a company managing critical infrastructure, Telenor has a proven security posture
                 </Feature>
                 <Feature icon="📡" heading="Catalyst for organizational transformation">

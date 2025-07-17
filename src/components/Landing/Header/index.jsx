@@ -1,6 +1,7 @@
-import cx from "classnames";
-import { navbar, logo, logoIcon, navLinks } from "./styles.css";
+import { navbar, logo, logoIcon, navLinks, hamburger } from "./styles.css";
+import NavMobile from './NavMobile';
 import logoSrc from './img/icon3.png';
+import { routes } from './routes'; 
 
 const Heading = () => {
   return (
@@ -10,10 +11,13 @@ const Heading = () => {
         Telenor's Platform
       </a>
       <nav className={navLinks}>
-        <a href="#features">Features</a>
-        <a href="#docs">Documentation</a>
-        <a href="#contact">Contact</a>
+        {routes.map((route) => (
+            <a key={route.title} href={route.href}>
+                {route.title}
+            </a>
+        ))}
       </nav>
+      <NavMobile className={hamburger} />
     </header>
   );
 };

@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+ul, ol {
+    list-style: none;
+}
+
 :root {
     --blue: #0050ff;
     --magenta: #ff007a;
