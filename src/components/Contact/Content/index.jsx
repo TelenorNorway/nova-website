@@ -12,6 +12,7 @@ const Content = () => {
         </h1>
 
         <div className={box}>
+          We would love to talk with you!<br />
           There are a few ways to get in touch with us
           <div>
             <h2>Offentlig PaaS Slack</h2>
