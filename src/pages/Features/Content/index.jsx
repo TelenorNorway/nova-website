@@ -1,17 +1,23 @@
-import { MessageCircleMore } from "lucide-react";
 import Whitepaper from './output.mdx'
 
-import { container, leftSection, heroH1, box } from "./styles.css";
+import { container, mainSection, h1, box } from "./styles.css";
 
 const Content = () => {
   return (
     <section className={container}>
-      <div className={leftSection}>
-        <h1 className={heroH1}>
-          Get in touch! <MessageCircleMore size={55} strokeWidth={1.5} />
+      <div className={mainSection}>
+        <div className={box}>
+            
+            <Whitepaper /></div>
+
+        <h1 className={h1} id="organizational-transformation">
+          Feature #1
         </h1>
 
         <div className={box}><Whitepaper /></div>
+      </div>
+      <div>
+        We also have a whitepaper which you can download here.
       </div>
     </section>
   );
