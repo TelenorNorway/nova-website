@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 import OrganizationalTransContent from './organizationalTrans.mdx';
 import SelfService from './selfService.mdx';
 import Security from './security.mdx';
@@ -8,7 +10,7 @@ import MultiCloud from './multiCloud.mdx';
 import OperationalModel from './operationalModel.mdx';
 
 import GlassmorphicBox from "../../../components/GlassmorphicBox";
-import { container, mainSection, h1, section } from "./styles.css";
+import { container, mainSection, h1, section, footnote, contactUs } from "./styles.css";
 
 const Content = () => {
   return (
@@ -38,11 +40,7 @@ const Content = () => {
           id="cloud-native"
         />
 
-        <Section
-          title="GitOps Automation"
-          article={<GitOps />}
-          id="gitops"
-        />
+        <Section title="GitOps Automation" article={<GitOps />} id="gitops" />
 
         <Section
           title="Data & AI Platform"
@@ -57,15 +55,18 @@ const Content = () => {
         />
 
         <Section
-            title="Operational Model"
-            article={<OperationalModel />}
-            id="operational-model"
+          title="Operational Model"
+          article={<OperationalModel />}
+          id="operational-model"
         />
       </div>
-      <div>
-        We also have a more detailed whitepaper. Contact us and we will send you
-        a copy
+      <div className={footnote}>
+        We can also provide a more detailed whitepaper about the platform.
+        Contact us and we will send you a copy
       </div>
+      <Link to="/contact" className={contactUs}>
+        Contact us!
+      </Link>
     </section>
   );
 };

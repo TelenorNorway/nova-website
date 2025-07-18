@@ -1,4 +1,4 @@
-import { globalStyle, style, globalKeyframes } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const container = style({
   display: "flex",
@@ -50,7 +50,7 @@ export const rightSection = style({
 
 export const box = style({
     maxWidth: "100%",
-    display: "flex",
+    display: "flex !important",
     flexDirection: "column",
     gap: "16px",
     "@media": {
