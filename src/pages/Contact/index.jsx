@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/index.jsx";
 import { container } from './styles.css.ts';
 import Content from "./Content/index.jsx";
 
-const Contact = () => {
+const NotFound = () => {
     return (
         <div className={container}>
             <Header />
@@ -13,4 +13,4 @@ const Contact = () => {
     );
 }
 
-export default Contact;
+export default NotFound;

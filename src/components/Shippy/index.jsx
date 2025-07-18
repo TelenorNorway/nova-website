@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import shippyDefault from './img/shippy6.png';
 import shippyRadio from './img/shippy2.png';
+import shippyConfused from './img/shippy7.png';
 import { shippy, floatingHeart } from "./styles.css";   
 
 const heartColors = ['#ff5a8a', '#ffb3c6', '#ff6f91', '#ff99ac', '#ff477e'];
@@ -25,6 +26,7 @@ const Shippy = ({ variation = "default" }) => {
   const imgSrc = ({
     default: shippyDefault,
     radio: shippyRadio,
+    confused: shippyConfused,
   })[variation];
 
   return (

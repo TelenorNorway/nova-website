@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Landing from './pages/Landing'
 import Contact from './pages/Contact'
 import Features from "./pages/Features";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route index element={<Landing />} />
         <Route path="features" element={<Features />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
