@@ -1,15 +1,11 @@
-import Header from "../../components/Header/index.jsx";
-import Footer from "../../components/Footer/index.jsx";
-import { container } from './styles.css.ts';
 import Content from "./Content/index.jsx";
+import Layout from "../../components/Layout/index.jsx";
 
 const NotFound = () => {
     return (
-        <div className={container}>
-            <Header />
-            <Content />
-            <Footer />
-        </div>
+      <Layout>
+        <Content />
+      </Layout>
     );
 }
 

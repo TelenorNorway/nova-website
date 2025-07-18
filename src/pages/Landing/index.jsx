@@ -1,18 +1,14 @@
-import Header from "../../components/Header/index.jsx";
 import Hero from "./Hero/index.jsx";
 import Features from "./Features/index.jsx";
-import Footer from "../../components/Footer/index.jsx";
-import { container } from './styles.css.ts';
+import Layout from "../../components/Layout/index.jsx";
 
 const Landing = () => {
-    return (
-        <div className={container}>
-            <Header />
-            <Hero />
-            <Features />
-            <Footer />
-        </div>
-    );
-}
+  return (
+    <Layout>
+      <Hero />
+      <Features />
+    </Layout>
+  );
+};
 
 export default Landing;
