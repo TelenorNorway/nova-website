@@ -31,5 +31,5 @@ export const container = style({
     `,
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    backgroundSize: "cover"
+    backgroundSize: "cover",
 });

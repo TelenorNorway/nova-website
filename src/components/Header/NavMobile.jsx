@@ -3,6 +3,7 @@ import { useClickAway } from "react-use";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
+import { Link } from "react-router";
 import { routes } from "./routes";
 import {
   navMobile,
@@ -49,7 +50,19 @@ const NavMobile = ({ className = "" }) => {
                     }}
                     className={navMobileListItem}
                   >
+                    {route.to ? (
+                    <Link
+                      key={route.title}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className={navMobileLink}
+                      to={route.to}
+                    >
+                      <span className={navMobileLinkTitle}>{route.title}</span>
+                      <Icon className={navMobileLinkIcon} />
+                    </Link>
+                    ) : (
                     <a
+                      key={route.title}
                       onClick={() => setOpen((prev) => !prev)}
                       className={navMobileLink}
                       href={route.href}
@@ -57,6 +70,7 @@ const NavMobile = ({ className = "" }) => {
                       <span className={navMobileLinkTitle}>{route.title}</span>
                       <Icon className={navMobileLinkIcon} />
                     </a>
+                    )}
                   </motion.li>
                 );
               })}

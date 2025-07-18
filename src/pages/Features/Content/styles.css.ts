@@ -38,6 +38,7 @@ globalStyle(`${container} ol`, {
 globalStyle(`${container} img`, {
     display: "block",
     margin: "0 auto",
+    maxWidth: "100%",
 });
 
 globalStyle(`${container} ul, ${container} li`, {
@@ -47,6 +48,7 @@ globalStyle(`${container} ul, ${container} li`, {
 
 export const mainSection = style({
     flex: 1,
+    maxWidth: "100%",
 });
 
 export const h1 = style({

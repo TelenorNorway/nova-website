@@ -1,17 +1,19 @@
+import cx from "classnames";
+import { glassmorphicBox  } from "../../../commonStyles.css"
 import { MessageCircleMore } from "lucide-react";
 
 import Shippy from "../../../components/Shippy";
-import { container, leftSection, heroH1, box, rightSection } from "./styles.css";
+import { container, leftSection, h1, box, rightSection } from "./styles.css";
 
 const Content = () => {
   return (
     <section className={container}>
       <div className={leftSection}>
-        <h1 className={heroH1}>
+        <h1 className={h1}>
           Get in touch! <MessageCircleMore size={55} strokeWidth={1.5} />
         </h1>
 
-        <div className={box}>
+        <div className={cx(glassmorphicBox, box)}>
           We would love to talk with you!<br />
           There are a few ways to get in touch with us
           <div>
