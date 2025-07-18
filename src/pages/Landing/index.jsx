@@ -1,7 +1,7 @@
-import Header from "../Header/index.jsx";
-import Hero from "./Hero";
-import Features from "./Features";
-import Footer from "../Footer/index.jsx";
+import Header from "../../components/Header/index.jsx";
+import Hero from "./Hero/index.jsx";
+import Features from "./Features/index.jsx";
+import Footer from "../../components/Footer/index.jsx";
 import { container } from './styles.css.ts';
 
 const Landing = () => {

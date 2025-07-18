@@ -3,7 +3,7 @@ import { Boxes, Book, Github, MessageCircleMore } from 'lucide-react';
 export const routes = [
     {
         title: "Features",
-        href: "#features",
+        to: "/features",
         Icon: () => <Boxes />
     },
     {
@@ -18,7 +18,7 @@ export const routes = [
     },
     {
         title: "Contact",
-        to: "contact",
+        to: "/contact",
         Icon: () => <MessageCircleMore />
     },
 ];

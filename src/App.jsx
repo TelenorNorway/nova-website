@@ -1,12 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import Landing from './components/Landing'
-import Contact from './components/Contact'
+import Landing from './pages/Landing'
+import Contact from './pages/Contact'
+import Features from "./pages/Features";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<Landing />} />
+        <Route path="features" element={<Features />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

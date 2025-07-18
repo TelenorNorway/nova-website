@@ -1,5 +1,5 @@
-import CodeBlock from '../../CodeBlock';
-import Shippy from '../../Shippy';
+import CodeBlock from '../../../components/CodeBlock';
+import Shippy from '../../../components/Shippy';
 import { hero, heroCopy, heroH1, ctaBtn, codeSnippet, heroIllus } from './styles.css';   
 
 const codeSnippetString = `# Your app, as simple as:

@@ -1,6 +1,6 @@
 import { MessageCircleMore } from "lucide-react";
 
-import Shippy from "../../Shippy";
+import Shippy from "../../../components/Shippy";
 import { container, leftSection, heroH1, box, rightSection } from "./styles.css";
 
 const Content = () => {
