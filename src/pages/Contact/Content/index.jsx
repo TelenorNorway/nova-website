@@ -1,9 +1,8 @@
-import cx from "classnames";
-import { glassmorphicBox  } from "../../../commonStyles.css"
 import { MessageCircleMore } from "lucide-react";
 
 import Shippy from "../../../components/Shippy";
 import { container, leftSection, h1, box, rightSection } from "./styles.css";
+import GlassmorphicBox from "../../../components/GlassmorphicBox";
 
 const Content = () => {
   return (
@@ -13,7 +12,7 @@ const Content = () => {
           Get in touch! <MessageCircleMore size={55} strokeWidth={1.5} />
         </h1>
 
-        <div className={cx(glassmorphicBox, box)}>
+        <GlassmorphicBox className={box}>
           We would love to talk with you!<br />
           There are a few ways to get in touch with us
           <div>
@@ -52,7 +51,7 @@ const Content = () => {
               Slack channel.
             </p>
           </div>
-        </div>
+        </GlassmorphicBox>
       </div>
       <div
         className={rightSection}

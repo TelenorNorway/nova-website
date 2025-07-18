@@ -7,7 +7,7 @@ import DataPlatform from './dataPlatform.mdx';
 import MultiCloud from './multiCloud.mdx';
 import OperationalModel from './operationalModel.mdx';
 
-import { glassmorphicBox } from '../../../commonStyles.css';
+import GlassmorphicBox from "../../../components/GlassmorphicBox";
 import { container, mainSection, h1, section } from "./styles.css";
 
 const Content = () => {
@@ -77,7 +77,7 @@ const Section = ({ title, id, article }) => {
         {title}
       </h1>
 
-      <div className={glassmorphicBox}>{article}</div>
+      <GlassmorphicBox>{article}</GlassmorphicBox>
     </article>
   );
 };
