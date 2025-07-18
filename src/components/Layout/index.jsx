@@ -1,6 +1,7 @@
 import cx from "classnames";
 import Header from "../Header";
 import Footer from "../Footer";
+import Banner from '../ConsentBanner'
 import { container } from './styles.css.ts';
 
 const Layout = ({ className, children, ...props }) => {
@@ -9,6 +10,7 @@ const Layout = ({ className, children, ...props }) => {
             <Header />
             {children}
             <Footer />
+            <Banner />
         </div>
     );
 }

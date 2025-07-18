@@ -1,0 +1,35 @@
+.banner {
+  position: fixed;
+  max-width: 400px;;
+  bottom: 25px;
+  right: 25px;
+  color: black;
+  
+  background: rgba(255, 255, 255, 0.25) !important;
+  width: 100%;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    width: calc(100% - 20px);
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.banner button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+}

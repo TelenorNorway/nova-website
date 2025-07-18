@@ -1,4 +1,4 @@
-import { style, globalKeyframes } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 
 export const hero = style({
   display: "flex",
