@@ -2,9 +2,11 @@ import {
   SatelliteDish,
   Hammer,
   LockKeyhole,
+  Cpu,
   GitCompareArrows,
   ChartNoAxesColumnIncreasing,
   Cloud,
+  MonitorPlay,
 } from "lucide-react";
 
 import { container, leftSection, h1, subtext, featuresGrid } from "./styles.css";
@@ -27,10 +29,22 @@ const FeaturesGrid = () => {
             image={<SatelliteDish />}
           />
           <Feature
-            title="Built-in DevSecOps"
+            title="Self-Service Infrastructure"
+            description="Provision apps & data in minutes"
+            href="#self-service-infrastructure"
+            image={<Hammer />}
+          />
+          <Feature
+            title="Built-in Security"
             description="Security baked in every step"
             href="#devsecops"
             image={<LockKeyhole />}
+          />
+          <Feature
+            title="Cloud Native"
+            description="Fully utilize cloud capabilities"
+            href="#cloud-native"
+            image={<Cpu />}
           />
           <Feature
             title="GitOps Automation"
@@ -51,10 +65,10 @@ const FeaturesGrid = () => {
             image={<Cloud />}
           />
           <Feature
-            title="Self-Service Infrastructure"
-            description="Provision apps & data in minutes"
-            href="#self-service-infrastructure"
-            image={<Hammer />}
+            title="Operational Model"
+            description="Run your platform like a pro"
+            href="#operational-model"
+            image={<MonitorPlay />}
           />
         </div>
       </div>

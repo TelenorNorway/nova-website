@@ -26,9 +26,18 @@ globalStyle(`${container} a`, {
     position: "relative",
 });
 
+globalStyle(`${container} p`, {
+    margin: "revert",
+});
+
 globalStyle(`${container} ol`, {
     listStyle: "auto",
     marginLeft: "1.5em",
+});
+
+globalStyle(`${container} img`, {
+    display: "block",
+    margin: "0 auto",
 });
 
 globalStyle(`${container} ul, ${container} li`, {
@@ -46,15 +55,11 @@ export const h1 = style({
   marginBottom: "24px",
 });
 
-export const box = style({
-    background: "rgba(255, 255, 255, 0.15)",
-    borderRadius: "16px",
-    padding: "24px",
-    backdropFilter: "blur(12px)",
-    WebkitBackdropFilter: "blur(12px)",
-    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.25)",
-    border: "1px solid rgba(255, 255, 255, 0.2)",
-    display: "flex",
-    flexDirection: "column",
-    gap: "16px",
+export const section = style({
+    marginBottom: "48px",
+    "@media": {
+        "screen and (max-width: 768px)": {
+            marginBottom: "32px",
+        },
+    },
 });
