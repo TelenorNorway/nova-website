@@ -1,4 +1,4 @@
-import { Boxes, Book, Github, MessageCircleMore } from 'lucide-react';
+import { Boxes, Book, Rss, MessageCircleMore } from 'lucide-react';
 
 export const routes = [
     {
@@ -7,14 +7,14 @@ export const routes = [
         Icon: () => <Boxes />
     },
     {
+        title: "Tech Blog",
+        to: "/blog",
+        Icon: () => <Rss />
+    },
+    {
         title: "Documentation",
         href: "https://nova.telenor.net",
         Icon: () => <Book />
-    },
-    {
-        title: "GitHub",
-        href: "https://github.com/TelenorNorway",
-        Icon: () => <Github />
     },
     {
         title: "Contact",
