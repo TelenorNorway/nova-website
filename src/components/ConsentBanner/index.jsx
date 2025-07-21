@@ -46,8 +46,6 @@ export default function Banner() {
     setConsentGiven("no");
   };
 
-  console.log("Cookie consent given:", consentGiven);
-
   return (
     <div>
       {consentGiven === "undecided" && (
