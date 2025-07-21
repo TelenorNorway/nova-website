@@ -26,11 +26,17 @@ const Blog = ({ blog, linkTo, showReadMore, truncateContent }) => {
               <h2 className={subtext}>{blog.metadata.title}</h2>
               <Blog />
             </div>
-            {!!showReadMore && <Link to={linkTo} className={readMore}>Read more</Link>}
+            {!!showReadMore && (
+              <Link to={linkTo} className={readMore}>
+                Read more
+              </Link>
+            )}
             <div className={metadata}>
               <div>
                 {!!blogAuthors &&
-                  blogAuthors.map((author) => <Author author={author} />)}
+                  blogAuthors.map((author) => (
+                    <Author key={author} author={author} />
+                  ))}
               </div>
               <time
                 className={date}

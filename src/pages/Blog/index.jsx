@@ -1,5 +1,5 @@
 import { useParams } from 'react-router';
-import * as blogs from '../../../blog/index.jsx';
+import * as blogs from '../../../blog';
 import BlogComponent from "../../components/Blog";
 import Layout from "../../components/Layout/index.jsx";
 
