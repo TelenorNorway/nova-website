@@ -30,7 +30,7 @@ const NavMobile = ({ className = "" }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.1 }}
             className={navMobileMenu}
           >
             <ul className={navMobileList}>
@@ -43,10 +43,10 @@ const NavMobile = ({ className = "" }) => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{
                       type: "spring",
-                      duration: 0.1,
+                      duration: 0.01,
                       stiffness: 160,
                       damping: 20,
-                      delay: 0.1 + idx / 10,
+                      delay: 0.1,
                     }}
                     className={navMobileListItem}
                   >

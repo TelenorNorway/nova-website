@@ -4,14 +4,13 @@ export const navbar = style({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding: "24px 48px",
+  padding: "24px 0",
   maxWidth: "1400px",
   width: "100%",
   margin: "0 auto",
   "@media": {
     "screen and (max-width: 768px)": {
       justifyContent: "space-between",
-      padding: "24px 28px",
     },
   },
 });
@@ -100,11 +99,6 @@ export const navMobileLink = style({
   fontSize: "1rem",
   fontWeight: 400,
   transition: "background 0.15s",
-  selectors: {
-    "&:hover": {
-      background: "#18181b",
-    },
-  },
 });
 
 export const navMobileLinkTitle = style({

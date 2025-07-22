@@ -13,7 +13,6 @@ import image12 from "./img/image12.png";
 
 import GlassmorphicBox from "../../../components/GlassmorphicBox";
 import {
-  container,
   mainSection,
   h1,
   footnote,
@@ -29,7 +28,7 @@ import {
 
 const Content = () => {
   return (
-    <section className={container}>
+    <section>
       <div className={mainSection}>
         <Section
           title="Organizational Transformation"

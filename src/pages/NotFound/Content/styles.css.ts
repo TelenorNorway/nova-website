@@ -4,10 +4,7 @@ export const container = style({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  maxWidth: "1400px",
-  width: "100%",
-  margin: "40px auto 0",
-  padding: "0 48px 56px",
+  margin: "40px auto 56px",
 });
 
 globalStyle(`${container} a`, {

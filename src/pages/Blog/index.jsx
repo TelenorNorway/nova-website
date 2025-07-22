@@ -2,7 +2,6 @@ import { useParams } from 'react-router';
 import * as blogs from '../../../blog';
 import BlogComponent from "../../components/Blog";
 import Layout from "../../components/Layout/index.jsx";
-import { container } from "./styles.css.ts";
 
 const Blog = () => {
     const params = useParams();
@@ -10,7 +9,7 @@ const Blog = () => {
     const slug = params.slug;
     const blog = Object.values(blogs).find(blog => blog.metadata.slug === slug);
     return (
-        <Layout className={container}>
+        <Layout>
             <BlogComponent blog={blog} />
         </Layout>
     );

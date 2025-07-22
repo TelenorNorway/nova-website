@@ -1,23 +1,5 @@
 import { globalStyle, style } from "@vanilla-extract/css";
 
-export const container = style({
-  display: "flex",
-  flexDirection: "column",
-  gap: "24px",
-  justifyContent: "space-between",
-  alignItems: "center",
-  maxWidth: "1400px",
-  width: "100%",
-  margin: "40px auto 0",
-  padding: "0 48px 56px",
-  "@media": {
-    "screen and (max-width: 768px)": {
-      flexDirection: "column",
-      padding: "0 28px 56px",
-    },
-  },
-});
-
 export const mainSection = style({
     flex: 1,
     maxWidth: "100%",
