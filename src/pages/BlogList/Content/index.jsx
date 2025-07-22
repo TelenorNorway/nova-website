@@ -14,7 +14,6 @@ const Content = () => {
                 key={key}
                 blog={blog}
                 linkTo={`/blog/${blog.metadata.slug}`}
-                showReadMore
                 truncateContent
               />
             );

@@ -1,22 +1,5 @@
 import { style, globalStyle } from "@vanilla-extract/css";
 
-export const container = style({
-  display: "flex",
-  justifyContent: "space-between",
-  flexDirection: "column",
-  alignItems: "center",
-  maxWidth: "1400px",
-  width: "100%",
-  margin: "40px auto 0",
-  padding: "0 48px 56px",
-  "@media": {
-    "screen and (max-width: 768px)": {
-      flexDirection: "column",
-      padding: "0 28px 56px",
-    },
-  },
-});
-
 export const subtext = style({
     fontSize: "2rem",
     lineHeight: 1.5,
