@@ -52,66 +52,67 @@ export const hamburger = style({
   },
 });
 
-/* NavMobile */ 
+/* NavMobile */
 export const navMobile = style({
-  display: 'block',
-  '@media': {
-    'screen and (min-width: 1024px)': {
-      display: 'none',
+  display: "block",
+  "@media": {
+    "screen and (min-width: 1024px)": {
+      display: "none",
     },
   },
 });
 
 export const navMobileMenu = style({
-  position: 'absolute',
+  position: "absolute",
+  overflow: "hidden",
   left: 0,
   right: 0,
-  top: '5.5rem',
-  padding: '1.25rem 1.25rem',
-  background: '#0a0a0a',
-  borderBottom: '1px solid rgba(255,255,255,0.2)',
-  boxShadow: '0 8px 32px 0 rgba(0,0,0,0.25)',
+  top: "5.5rem",
+  background: "#ffffff",
+  borderBottom: "1px solid rgba(255,255,255,0.2)",
+  boxShadow: "0 8px 32px 0 rgba(0,0,0,0.25)",
   zIndex: 100,
 });
 
 export const navMobileList = style({
-  display: 'grid',
-  gap: '0.5rem',
+  display: "grid",
+  gap: "0.5rem",
 });
 
 export const navMobileListItem = style({
-  width: '100%',
-  padding: '0.08rem',
-  borderRadius: '0.75rem',
-  background: 'linear-gradient(135deg, #27272a 0%, #0a0a0a 60%, #404040 100%)',
+  width: "100%",
+  padding: "0.08rem",
+  borderBottom: "1px solid rgba(0,0,0,0.3)",
+  ":last-child": {
+    borderBottom: "none",
+  },
 });
 
 export const navMobileLink = style({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  width: '100%',
-  padding: '1.25rem',
-  borderRadius: '0.75rem',
-  background: '#0a0a0a',
-  color: 'inherit',
-  textDecoration: 'none',
-  fontSize: '1rem',
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  width: "100%",
+  padding: "1.25rem",
+  background: "#ffffff",
+  color: "black",
+  textDecoration: "none",
+  fontSize: "1rem",
   fontWeight: 400,
-  transition: 'background 0.15s',
+  transition: "background 0.15s",
   selectors: {
-    '&:hover': {
-      background: '#18181b',
+    "&:hover": {
+      background: "#18181b",
     },
   },
 });
 
 export const navMobileLinkTitle = style({
-  display: 'flex',
-  gap: '0.25rem',
-  fontSize: '1.125rem',
+  display: "flex",
+  gap: "0.25rem",
+  fontSize: "1.125rem",
 });
 
 export const navMobileLinkIcon = style({
-  fontSize: '1.25rem',
+  fontSize: "1.25rem",
 });
