@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/nova-website/">
       <Routes>
         <Route index element={<Landing />} />
         <Route path="features" element={<Features />} />
