@@ -39,41 +39,42 @@ const Content = () => {
             <>
               <h2>Build Better, Ship Faster</h2>
               <p>
-                Nova isn’t just a platform - it’s a mindset shift. By embracing
-                GitOps, DevSecOps, and self-service principles, your
-                organization cultivates a high-trust, high-velocity engineering
-                culture. With Nova as your foundation, you’re not just
-                accelerating delivery - you’re building the future of
-                cloud-native resilience and innovation.
+                Telenor's Platform isn’t just a platform - it’s a mindset shift.
+                By embracing GitOps, DevSecOps, and self-service principles,
+                your organization cultivates a high-trust, high-velocity
+                engineering culture. With Telenor's Platform as your foundation,
+                you’re not just accelerating delivery - you’re building the
+                future of cloud-native resilience and inTelenor's Platformtion.
               </p>
             </>
           }
         >
           <ContentDrawers>
             <Drawer title="GitOps-Driven Control">
-              Nova empowers teams with version-controlled infrastructure and
-              application delivery. Changes are transparent, auditable, and
-              reversible - enabling safer, faster deployments at scale.
+              Telenor's Platform empowers teams with version-controlled
+              infrastructure and application delivery. Changes are transparent,
+              auditable, and reversible - enabling safer, faster deployments at
+              scale.
             </Drawer>
             <Drawer title="DevSecOps by Design">
-              Woven into the core of the platform, Nova promotes proactive
-              threat mitigation, compliance automation, and secure-by-default
-              practices from day one.
+              Woven into the core of the platform, Telenor's Platform promotes
+              proactive threat mitigation, compliance automation, and
+              secure-by-default practices from day one.
             </Drawer>
             <Drawer title="Developer Self-Service">
               Give your teams the autonomy to spin up environments, deploy
-              services, and manage infrastructure without waiting on ops. Nova
-              puts power in their hands - safely.
+              services, and manage infrastructure without waiting on ops.
+              Telenor's Platform puts power in their hands - safely.
             </Drawer>
             <Drawer title="Effortless Scalability">
-              Nova adapts to your needs, whether you're serving ten users or ten
-              million. Its scalable architecture ensures consistent performance
-              and reliability at every stage.
+              Telenor's Platform adapts to your needs, whether you're serving
+              ten users or ten million. Its scalable architecture ensures
+              consistent performance and reliability at every stage.
             </Drawer>
             <Drawer title="A Joyful Developer Experience">
-              From intuitive interfaces to seamless integrations, Nova removes
-              the obstacles that slow down development - so your teams can stay
-              in the zone and ship with confidence.
+              From intuitive interfaces to seamless integrations, Telenor's
+              Platform removes the obstacles that slow down development - so
+              your teams can stay in the zone and ship with confidence.
             </Drawer>
           </ContentDrawers>
         </Section>
@@ -88,14 +89,14 @@ const Content = () => {
               <p>
                 As organizations race to embrace the cloud, many hit a wall: how
                 do you stay fast and stay in control? Traditional IT gatekeeping
-                slows teams down and stifles innovation. Nova solves this by
-                delivering a cloud platform built around{" "}
+                slows teams down and stifles inTelenor's Platformtion. Telenor's
+                Platform solves this by delivering a cloud platform built around{" "}
                 <b>secure self-service</b> - empowering teams to move quickly
                 while staying aligned with governance, security, and
                 cost-efficiency goals. By giving engineers the autonomy to
-                manage resources within clear guardrails, Nova helps you
-                accelerate delivery, improve operational efficiency, and boost
-                developer satisfaction - without compromising control.
+                manage resources within clear guardrails, Telenor's Platform
+                helps you accelerate delivery, improve operational efficiency,
+                and boost developer satisfaction - without compromising control.
               </p>
             </>
           }
@@ -104,21 +105,21 @@ const Content = () => {
             <Drawer title="Speed as a Competitive Advantage">
               <h3>Reduce friction between idea and execution</h3>
               <p>
-                Nova lets developers provision infrastructure instantly within
-                policy-defined boundaries. That means:
+                Telenor's Platform lets developers provision infrastructure
+                instantly within policy-defined boundaries. That means:
               </p>
 
               <ul>
                 <li>Shorter time-to-value</li>
                 <li>Less reliance on centralized Ops teams</li>
-                <li>Higher innovation velocity</li>
+                <li>Higher inTelenor's Platformtion velocity</li>
               </ul>
             </Drawer>
             <Drawer title="Operational Efficiency and Cost Control">
               <h3>Say goodbye to bottlenecks and ballooning budgets</h3>
               <p>
                 Manual provisioning and ticket queues are expensive - in time
-                and money. Nova’s self-service model includes:
+                and money. Telenor's Platform’s self-service model includes:
               </p>
               <ul>
                 <li>Quotas and policy-driven access</li>
@@ -129,9 +130,9 @@ const Content = () => {
             <Drawer title="Security and Compliance at Scale">
               <h3>Self-service doesn’t mean chaos</h3>
               <p>
-                Nova embeds guardrails that enforce security and compliance,
-                ensuring every deployment aligns with org-wide policies. Core
-                features include:
+                Telenor's Platform embeds guardrails that enforce security and
+                compliance, ensuring every deployment aligns with org-wide
+                policies. Core features include:
               </p>
               <ul>
                 <li>
@@ -148,8 +149,8 @@ const Content = () => {
             <Drawer title="Developer Experience">
               <h3>Frictionless workflows that retain top talent</h3>
               <p>
-                Engineers thrive when they can move fast without red tape. Nova
-                enhances the developer journey with:
+                Engineers thrive when they can move fast without red tape.
+                Telenor's Platform enhances the developer journey with:
               </p>
               <ul>
                 <li>Intuitive UIs for managing resources</li>
@@ -174,12 +175,13 @@ const Content = () => {
               <h2>Security and Privacy You Can Trust</h2>
               <p>
                 In a cloud-native world, protecting your data, applications, and
-                infrastructure isn’t optional - it’s mission-critical. Nova is
-                built with security and privacy at its core, using a
+                infrastructure isn’t optional - it’s mission-critical. Telenor's
+                Platform is built with security and privacy at its core, using a
                 multi-layered defense strategy grounded in industry best
                 practices and the operational rigor of Telenor. From encryption
-                to incident response, Nova gives you the confidence to build,
-                scale, and innovate - without compromising safety.
+                to incident response, Telenor's Platform gives you the
+                confidence to build, scale, and inTelenor's Platformte - without
+                compromising safety.
               </p>
             </>
           }
@@ -188,8 +190,8 @@ const Content = () => {
             <Drawer title="Defense-in-Depth by Design">
               <h3>Security isn’t an add-on - it’s a foundation</h3>
               <p>
-                Nova includes multiple integrated security layers to proactively
-                defend against threats:
+                Telenor's Platform includes multiple integrated security layers
+                to proactively defend against threats:
               </p>
               <ul>
                 <li>
@@ -211,8 +213,9 @@ const Content = () => {
               <h3>Proven, enterprise-grade security from day one</h3>
               <p>
                 Telenor’s deep experience in managing critical infrastructure
-                forms the foundation for Nova’s security posture. Nova follows
-                Telenor’s Defendable Architecture principles, delivering:
+                forms the foundation for Telenor's Platform’s security posture.
+                Telenor's Platform follows Telenor’s Defendable Architecture
+                principles, delivering:
               </p>
               <ul>
                 <li>
@@ -235,8 +238,8 @@ const Content = () => {
             <Drawer title="Privacy-First Principles">
               <h3>Data privacy is more than compliance - it’s a promise</h3>
               <p>
-                Nova takes a holistic approach to privacy by embedding
-                protections into every layer:
+                Telenor's Platform takes a holistic approach to privacy by
+                embedding protections into every layer:
               </p>
               <ul>
                 <li>
@@ -282,10 +285,10 @@ const Content = () => {
               <p>
                 Cloud‑native isn’t just a buzzword - it’s a mindset. By
                 combining microservice architecture, containerization, and
-                DevSecOps, Nova unleashes flexible, scalable, and secure
-                applications that thrive in any environment. Build fast, scale
-                effortlessly, and sleep soundly knowing security travels with
-                every deploy.
+                DevSecOps, Telenor's Platform unleashes flexible, scalable, and
+                secure applications that thrive in any environment. Build fast,
+                scale effortlessly, and sleep soundly knowing security travels
+                with every deploy.
               </p>
             </>
           }
@@ -400,9 +403,9 @@ const Content = () => {
           image={image10}
           description={
             <>
-              <h2>Unlock Data and AI Excellence with Nova</h2>
+              <h2>Unlock Data and AI Excellence with Telenor's Platform</h2>
               <p>
-                Nova weaves best‑in‑class DataOps, analytics, and
+                Telenor's Platform weaves best‑in‑class DataOps, analytics, and
                 machine‑learning tools into one seamless platform. From
                 reproducible data transformations to production‑grade AI, your
                 teams get everything they need to turn raw data into real‑time
@@ -459,9 +462,9 @@ const Content = () => {
                 One cohesive environment equals less overhead, more impact
               </h3>
               <p>
-                By unifying data and AI tooling under Nova, teams iterate
-                quickly, reduce maintenance toil, and surface insights that
-                propel the business forward.
+                By unifying data and AI tooling under Telenor's Platform, teams
+                iterate quickly, reduce maintenance toil, and surface insights
+                that propel the business forward.
               </p>
             </Drawer>
           </ContentDrawers>
@@ -475,10 +478,11 @@ const Content = () => {
             <>
               <h2>One Platform, Endless Cloud Freedom</h2>
               <p>
-                Nova lets you run workloads on Azure and Google Cloud without
-                the usual headaches. By unifying dev workflows, IaC, security,
-                CI/CD, and observability, it delivers a seamless multi‑cloud
-                experience that keeps governance tight and overhead low.
+                Telenor's Platform lets you run workloads on Azure and Google
+                Cloud without the usual headaches. By unifying dev workflows,
+                IaC, security, CI/CD, and observability, it delivers a seamless
+                multi‑cloud experience that keeps governance tight and overhead
+                low.
               </p>
             </>
           }
@@ -535,11 +539,14 @@ const Content = () => {
           image={image12}
           description={
             <>
-              <h2>Nova’s Operating Model: Built for Continuous Evolution</h2>
+              <h2>
+                Telenor's Platform’s Operating Model: Built for Continuous
+                Evolution
+              </h2>
               <p>
-                Nova isn’t just a platform - it’s a living ecosystem. Our
-                operating model is refined every quarter to match Telenor’s
-                dynamic landscape and keep developers in flow. Six
+                Telenor's Platform isn’t just a platform - it’s a living
+                ecosystem. Our operating model is refined every quarter to match
+                Telenor’s dynamic landscape and keep developers in flow. Six
                 interconnected pillars - Platform Development, Service Delivery,
                 People & Organization, Technology & Architecture, Performance
                 Management, and Governance - work together so you can ship
@@ -552,10 +559,10 @@ const Content = () => {
             <Drawer title="Platform Development">
               <h3>Community‑driven features, product mindset</h3>
               <p>
-                We treat Nova as a product: capturing demands, prioritizing by
-                value, and releasing in a steady DevSecOps cadence. Quarterly
-                intake sessions ensure the roadmap reflects both strategic goals
-                and day‑to‑day developer pain points.
+                We treat Telenor's Platform as a product: capturing demands,
+                prioritizing by value, and releasing in a steady DevSecOps
+                cadence. Quarterly intake sessions ensure the roadmap reflects
+                both strategic goals and day‑to‑day developer pain points.
               </p>
             </Drawer>
             <Drawer title="Community First">
@@ -584,9 +591,9 @@ const Content = () => {
             <Drawer title="“You Build It, You Run It”">
               <h3>Shared ownership drives quality</h3>
               <p>
-                Teams who create services on Nova own them in production,
-                fostering accountability and a sustainable, high‑performing
-                ecosystem.
+                Teams who create services on Telenor's Platform own them in
+                production, fostering accountability and a sustainable,
+                high‑performing ecosystem.
               </p>
             </Drawer>
             <Drawer title="Transparent Roadmaps">
@@ -614,7 +621,9 @@ const Content = () => {
 const Section = ({ title, id, image, description, children }) => {
   return (
     <section>
-      <h1 className={h1} id={id}>{title}</h1>
+      <h1 className={h1} id={id}>
+        {title}
+      </h1>
 
       <img src={image} />
       <div className={contentContainer}>
