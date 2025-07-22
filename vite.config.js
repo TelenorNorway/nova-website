@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import mdx from "@mdx-js/rollup";
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
-import generateRss from './plugins/vite-plugin-generate-rss'
-
+import generateRss from "./plugins/vite-plugin-generate-rss";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/nova-website/",
   plugins: [
     { enforce: "pre", ...mdx() },
     generateRss(),
