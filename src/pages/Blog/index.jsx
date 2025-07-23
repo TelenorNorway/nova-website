@@ -22,7 +22,7 @@ const Blog = () => {
         />
         <meta
           property="og:image"
-          content={`http://telenornorway.github.io/nova-website${blog.metadata.image}`}
+          content={`http://telenornorway.github.io${blog.metadata.image}`}
         />
 
         <meta name="twitter:card" content="summary" />
@@ -34,7 +34,7 @@ const Blog = () => {
         <meta name="twitter:url" content={`http://telenornorway.github.io/nova-website/blog/${slug}`} />
         <meta
           name="twitter:image"
-          content={`http://telenornorway.github.io/nova-website${blog.metadata.image}`}
+          content={`http://telenornorway.github.io${blog.metadata.image}`}
         />
       </Head>
       <BlogComponent blog={blog} />
