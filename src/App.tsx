@@ -59,6 +59,10 @@ export const routes: RouteRecord[] = [
         }
     },
     {
+        path: '/404',
+        Component: NotFound,
+    },
+    {
         path: '*',
         Component: NotFound,
     },
