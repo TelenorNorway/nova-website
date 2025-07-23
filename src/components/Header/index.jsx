@@ -1,8 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { ClientOnly } from 'vite-react-ssg'
 import { navbar, logo, logoIcon, navLinks, hamburger } from "./styles.css";
-import NavMobile from './NavMobile';
 import logoSrc from './img/icon3.png';
 import { routes } from './routes'; 
+
+const NavMobile = React.lazy(() => import('./NavMobile'));
 
 const Heading = () => {
   return (
@@ -24,7 +27,9 @@ const Heading = () => {
           )
         )}
       </nav>
-      <NavMobile className={hamburger} />
+      <ClientOnly>
+        {() => <NavMobile className={hamburger} />}
+      </ClientOnly>
     </header>
   );
 };
