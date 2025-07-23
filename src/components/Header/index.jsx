@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { navbar, logo, logoIcon, navLinks, hamburger } from "./styles.css";
 import NavMobile from './NavMobile';
 import logoSrc from './img/icon3.png';

@@ -1,10 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+//import { StrictMode } from 'react'
 import './index.css'
-import App from './App.jsx'
-import { HelmetProvider } from 'react-helmet-async'
-import { PostHogProvider } from 'posthog-js/react'
+//import App from './App.tsx'
+//import { HelmetProvider } from 'react-helmet-async'
+//import { PostHogProvider } from 'posthog-js/react'
 
+/*
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HelmetProvider>
@@ -23,4 +23,17 @@ createRoot(document.getElementById("root")).render(
       </PostHogProvider>
     </HelmetProvider>
   </StrictMode>
+);
+*/
+
+import { ViteReactSSG } from 'vite-react-ssg'
+import { routes } from './App.tsx'
+
+export const createRoot = ViteReactSSG(
+  // react-router-dom data routes
+  { routes, basename: import.meta.env.BASE_URL },
+  // function to have custom setups
+  ({ router, routes, isClient, initialState }) => {
+    // do something.
+  }
 );

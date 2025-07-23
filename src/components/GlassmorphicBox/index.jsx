@@ -1,6 +1,6 @@
 import cx from "classnames";
 import { glassmorphicBox } from "./styles.css.ts";
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const GlassmorphicBox = ({ className, children, href, to, ...props }) => {
     if (href) {

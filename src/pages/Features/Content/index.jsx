@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cx from "classnames";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 import image from "./img/image6.png";
 import image5 from "./img/image5.png";

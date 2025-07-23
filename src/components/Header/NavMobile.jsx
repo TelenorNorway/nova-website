@@ -1,9 +1,9 @@
 import cx from "classnames";
-import { useClickAway } from "react-use";
+// import { useClickAway } from "react-use";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { routes } from "./routes";
 import {
   navMobile,
@@ -19,7 +19,7 @@ const NavMobile = ({ className = "" }) => {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
 
-  useClickAway(ref, () => setOpen(false));
+  // useClickAway(ref, () => setOpen(false));
 
   return (
     <div ref={ref} className={cx(navMobile, className)}>

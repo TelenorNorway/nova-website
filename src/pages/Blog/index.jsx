@@ -1,8 +1,9 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import * as blogs from "../../../blog";
 import BlogComponent from "../../components/Blog";
 import Layout from "../../components/Layout/index.jsx";
-import { Helmet } from "react-helmet-async";
+import { Head } from 'vite-react-ssg'
+
 
 const Blog = () => {
   const params = useParams();
@@ -11,7 +12,7 @@ const Blog = () => {
 
   return (
     <Layout>
-      <Helmet>
+      <Head>
         <meta property="og:title" content={blog.title} />
         <meta property="og:url" content={`http://telenornorway.github.io/nova-website/blog/${slug}`} />
         <meta property="og:type" content="website" />
@@ -35,7 +36,7 @@ const Blog = () => {
           name="twitter:image"
           content={`http://telenornorway.github.io/nova-website${blog.metadata.image}`}
         />
-      </Helmet>
+      </Head>
       <BlogComponent blog={blog} />
     </Layout>
   );
