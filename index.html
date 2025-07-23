@@ -17,17 +17,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      // Restore page path if the user was redirected from a non-index route
-      // See 404.html for more details
-      (function () {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

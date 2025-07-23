@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import Landing from './pages/Landing'
 import Contact from './pages/Contact'
 import Features from "./pages/Features";
@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter basename="/nova-website/">
+    <HashRouter>
       <Routes>
         <Route index element={<Landing />} />
         <Route path="features" element={<Features />} />
@@ -19,8 +19,8 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
-export default App
+export default App;
