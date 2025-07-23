@@ -9,8 +9,6 @@ const Blog = () => {
   const slug = params.slug;
   const blog = Object.values(blogs).find((blog) => blog.metadata.slug === slug);
 
-  console.log(process.env);
-
   return (
     <Layout>
       <Helmet>
