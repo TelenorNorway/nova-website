@@ -1,3 +1,4 @@
+import { Head } from 'vite-react-ssg'
 import cx from "classnames";
 import Header from "../Header";
 import Footer from "../Footer";
@@ -6,14 +7,20 @@ import { container, innerContainer } from "./styles.css.ts";
 
 const Layout = ({ className, children, ...props }) => {
   return (
-    <div className={cx(container, className)} {...props}>
-      <div className={innerContainer}>
-        <Header />
-        {children}
-        <Footer />
-        <Banner />
+    <>
+      <Head>
+        {/* The default title if not overridden by a page */}
+        <title>Telenor's Cloud Platform</title>
+      </Head>
+      <div className={cx(container, className)} {...props}>
+        <div className={innerContainer}>
+          <Header />
+          {children}
+          <Footer />
+          <Banner />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

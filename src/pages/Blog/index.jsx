@@ -13,7 +13,8 @@ const Blog = () => {
   return (
     <Layout>
       <Head>
-        <meta property="og:title" content={blog.title} />
+        <title>{`${blog.metadata.title} | The Techy Tech Blog`}</title>
+        <meta property="og:title" content={blog.metadata.title} />
         <meta property="og:url" content={`http://telenornorway.github.io/nova-website/blog/${slug}`} />
         <meta property="og:type" content="website" />
         <meta
@@ -26,7 +27,7 @@ const Blog = () => {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={blog.title} />
+        <meta name="twitter:title" content={blog.metadata.title} />
         <meta
           name="twitter:description"
           content={blog.metadata.description}
