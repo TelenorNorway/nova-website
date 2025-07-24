@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ClientOnly } from 'vite-react-ssg'
 import { navbar, logo, logoIcon, navLinks, hamburger } from "./styles.css";
-import logoSrc from './img/icon3.png?format=webp';
+import logoSrc from './img/icon3.png?w=21&h=30&format=webp';
 import { routes } from './routes'; 
 
 const NavMobile = React.lazy(() => import('./NavMobile'));
@@ -14,6 +14,7 @@ const Heading = () => {
         <img
           className={logoIcon}
           src={logoSrc}
+          width={21}
           height={30}
           alt="Telenor's Platform logo"
         />

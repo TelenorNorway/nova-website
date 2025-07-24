@@ -51,6 +51,7 @@ const Shippy = ({ variation = "default" }) => {
         className={shippy}
         fetchPriority='high'
         src={imgSrc}
+        width={300}
         height={300}
         alt="Shippy the pup smiles at you"
         onClick={handleShippyClick}
