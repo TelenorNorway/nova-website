@@ -34,6 +34,7 @@ const Content = () => {
           title="Organizational Transformation"
           id="organizational-transformation"
           image={image}
+          imageAlt="Organizational transformation illustration showing Nova's makeup of services and technologies"
           description={
             <>
               <h2>Build Better, Ship Faster</h2>
@@ -82,6 +83,7 @@ const Content = () => {
           title="Self-Service Infrastructure"
           id="self-service-infrastructure"
           image={image5}
+          imageAlt="A funny looking wizard with a wand on a cloud, symbolizing self-service infrastructure"
           description={
             <>
               <h2>Unlock Developer Agility with Secure Self-Service</h2>
@@ -169,6 +171,7 @@ const Content = () => {
           title="Built-in Security"
           id="devsecops"
           image={image7}
+          imageAlt="An illustration of a shield with a lock, symbolizing built-in security in the platform"
           description={
             <>
               <h2>Security and Privacy You Can Trust</h2>
@@ -278,6 +281,7 @@ const Content = () => {
           title="Cloud Native"
           id="cloud-native"
           image={image8}
+          imageAlt="An abstract illustration of cloud-native architecture with microservices and containers"
           description={
             <>
               <h2>Embrace Cloud‑Native Freedom</h2>
@@ -343,6 +347,7 @@ const Content = () => {
           title="GitOps Automation"
           id="gitops"
           image={image9}
+          imageAlt="An GitOps automation illustration showing the four principles: Visibility, Security, Rollbacks, and Collaboration"
           description={
             <>
               <h2>Ship with Confidence through GitOps</h2>
@@ -400,6 +405,7 @@ const Content = () => {
           title="Data & AI Platform"
           id="data-ai-platform"
           image={image10}
+          imageAlt="An abstract illustration of a data and AI platform with interconnected services"
           description={
             <>
               <h2>Unlock Data and AI Excellence with Telenor's Platform</h2>
@@ -473,6 +479,7 @@ const Content = () => {
           title="Multi-Cloud Ready"
           id="multi-cloud"
           image={image11}
+          imageAlt="An abstract illustration of a multi-cloud architecture with Azure and Google Cloud logos"
           description={
             <>
               <h2>One Platform, Endless Cloud Freedom</h2>
@@ -536,6 +543,7 @@ const Content = () => {
           title="Operational Model"
           id="operational-model"
           image={image12}
+          imageAlt="An abstract illustration of Telenor's Platform's operating model with various symbols representing its components"
           description={
             <>
               <h2>
@@ -607,24 +615,26 @@ const Content = () => {
         </Section>
       </div>
       <div className={footnote}>
-        We can also provide a more detailed whitepaper about the platform.
-        Contact us and we will send you a copy
+        <p>
+          We can also provide a more detailed whitepaper about the platform.
+          Contact us and we will send you a copy
+        </p>
+        <Link to="/contact" className={contactUs}>
+          Contact us!
+        </Link>
       </div>
-      <Link to="/contact" className={contactUs}>
-        Contact us!
-      </Link>
     </section>
   );
 };
 
-const Section = ({ title, id, image, description, children }) => {
+const Section = ({ title, id, image, imageAlt, description, children }) => {
   return (
     <section>
       <h1 className={h1} id={id}>
         {title}
       </h1>
 
-      <img src={image} />
+      <img src={image} alt={imageAlt} />
       <div className={contentContainer}>
         <GlassmorphicBox className={leftPanel}>{description}</GlassmorphicBox>
         <GlassmorphicBox className={rightPanel}>{children}</GlassmorphicBox>
