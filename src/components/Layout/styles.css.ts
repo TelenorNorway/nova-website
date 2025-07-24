@@ -8,6 +8,7 @@ export const container = style({
     minHeight: "100vh",
     display: "flex",
     flexDirection: "column",
+    overflowX: "hidden",
     background: `
     /* 1. Magenta flare in the bottom‑left */
     radial-gradient(
