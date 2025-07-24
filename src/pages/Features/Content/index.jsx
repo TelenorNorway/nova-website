@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import cx from "classnames";
 import { Link } from "react-router-dom";
 
-import image from "./img/image6.png";
-import image5 from "./img/image5.png";
-import image7 from "./img/image7.png";
-import image8 from "./img/image8.png";
-import image9 from "./img/image9.png";
-import image10 from "./img/image10.png";
-import image11 from "./img/image11.png";
-import image12 from "./img/image12.png";
+import image from "./img/image6.png?w=1304&format=webp";
+import image5 from "./img/image5.png?w=1304&format=webp";
+import image7 from "./img/image7.png?w=1304&format=webp";
+import image8 from "./img/image8.png?w=1304&format=webp";
+import image9 from "./img/image9.png?w=1304&format=webp";
+import image10 from "./img/image10.png?w=1304&format=webp";
+import image11 from "./img/image11.png?w=1304&format=webp";
+import image12 from "./img/image12.png?w=1304&format=webp";
 
 import GlassmorphicBox from "../../../components/GlassmorphicBox";
 import {
