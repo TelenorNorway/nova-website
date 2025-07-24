@@ -46,11 +46,14 @@ export const footnote = style({
     fontSize: "0.875rem",
     lineHeight: 1.5,
     textAlign: "center",
+    marginTop: "32px",
 });
 
 export const contactUs = style({
   background: "var(--blue)",
+  display: "inline-block",
   border: "none",
+  marginTop: "16px",
   padding: "16px 32px",
   borderRadius: "25px",
   fontSize: "1rem",
