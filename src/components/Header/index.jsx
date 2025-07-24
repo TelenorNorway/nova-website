@@ -11,7 +11,12 @@ const Heading = () => {
   return (
     <header className={navbar}>
       <Link to="/" className={logo}>
-        <img className={logoIcon} src={logoSrc} />
+        <img
+          className={logoIcon}
+          src={logoSrc}
+          height={30}
+          alt="Telenor's Platform logo"
+        />
         Telenor's Platform
       </Link>
       <nav className={navLinks}>
@@ -27,9 +32,7 @@ const Heading = () => {
           )
         )}
       </nav>
-      <ClientOnly>
-        {() => <NavMobile className={hamburger} />}
-      </ClientOnly>
+      <ClientOnly>{() => <NavMobile className={hamburger} />}</ClientOnly>
     </header>
   );
 };
