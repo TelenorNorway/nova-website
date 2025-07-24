@@ -1,11 +1,5 @@
 import React from "react";
 import type { RouteRecord } from 'vite-react-ssg'
-const Landing = React.lazy(() => import('./pages/Landing'))
-const Contact = React.lazy(() => import('./pages/Contact'))
-const Features = React.lazy(() => import("./pages/Features"));
-const BlogList = React.lazy(() => import("./pages/BlogList"));
-const Blog = React.lazy(() => import("./pages/Blog"));
-const NotFound = React.lazy(() => import("./pages/NotFound"));
 
 /*
 function App() {
@@ -31,23 +25,28 @@ export default App;
 export const routes: RouteRecord[] = [
     {
         path: '/',
-        Component: Landing,
+        lazy: () => defaultToComponent(import('./pages/Landing')),
+        entry: "src/pages/Landing/index.jsx",
     },
     {
         path: '/features',
-        Component: Features,
+        lazy: () => defaultToComponent(import('./pages/Features')),
+        entry: "src/pages/Features/index.jsx",
     },
     {
         path: '/contact',
-        Component: Contact,
+        lazy: () => defaultToComponent(import('./pages/Contact')),
+        entry: "src/pages/Contact/index.jsx",
     },
     {
         path: '/blog',
-        Component: BlogList,
+        lazy: () => defaultToComponent(import('./pages/BlogList')),
+        entry: "src/pages/BlogList/index.jsx",
     },
     {
         path: '/blog/:slug',
-        Component: Blog,
+        lazy: () => defaultToComponent(import('./pages/Blog')),
+        entry: "src/pages/Blog/index.jsx",
         getStaticPaths: async () => {
             const blogPosts = await import('../blog');
             if (blogPosts) {
@@ -60,10 +59,18 @@ export const routes: RouteRecord[] = [
     },
     {
         path: '/404',
-        Component: NotFound,
+        lazy: () => defaultToComponent(import('./pages/NotFound')),
+        entry: "src/pages/NotFound/index.jsx",
     },
     {
         path: '*',
-        Component: NotFound,
+        lazy: () => defaultToComponent(import('./pages/NotFound')),
+        entry: "src/pages/NotFound/index.jsx",
     },
 ];
+
+async function defaultToComponent(routePromise: Promise<RouteRecord & { default: any }>) {
+  const routeModule = await routePromise
+
+  return { ...routeModule, Component: routeModule.default }
+}
