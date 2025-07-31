@@ -44,7 +44,7 @@ const Content = () => {
                 your organization cultivates a high-trust, high-velocity
                 engineering culture. With Telenor's Platform as your foundation,
                 you’re not just accelerating delivery - you’re building the
-                future of cloud-native resilience and inTelenor's Platformtion.
+                future of cloud-native resilience and innovation.
               </p>
             </>
           }
@@ -53,7 +53,7 @@ const Content = () => {
             <Drawer title="GitOps-Driven Control">
               Telenor's Platform empowers teams with version-controlled
               infrastructure and application delivery. Changes are transparent,
-              auditable, and reversible - enabling safer, faster deployments at
+              auditable, and reversible - enabling safer and faster deployments at
               scale.
             </Drawer>
             <Drawer title="DevSecOps by Design">
@@ -63,12 +63,12 @@ const Content = () => {
             </Drawer>
             <Drawer title="Developer Self-Service">
               Give your teams the autonomy to spin up environments, deploy
-              services, and manage infrastructure without waiting on ops.
+              services and manage infrastructure without waiting on ops.
               Telenor's Platform puts power in their hands - safely.
             </Drawer>
             <Drawer title="Effortless Scalability">
               Telenor's Platform adapts to your needs, whether you're serving
-              ten users or ten million. Its scalable architecture ensures
+              ten or ten million users. Its scalable architecture ensures
               consistent performance and reliability at every stage.
             </Drawer>
             <Drawer title="A Joyful Developer Experience">
@@ -90,7 +90,7 @@ const Content = () => {
               <p>
                 As organizations race to embrace the cloud, many hit a wall: how
                 do you stay fast and stay in control? Traditional IT gatekeeping
-                slows teams down and stifles inTelenor's Platformtion. Telenor's
+                slows teams down and hinder innovation. Telenor's
                 Platform solves this by delivering a cloud platform built around{" "}
                 <b>secure self-service</b> - empowering teams to move quickly
                 while staying aligned with governance, security, and
@@ -113,14 +113,14 @@ const Content = () => {
               <ul>
                 <li>Shorter time-to-value</li>
                 <li>Less reliance on centralized Ops teams</li>
-                <li>Higher inTelenor's Platformtion velocity</li>
+                <li>Higher velocity</li>
               </ul>
             </Drawer>
             <Drawer title="Operational Efficiency and Cost Control">
               <h3>Say goodbye to bottlenecks and ballooning budgets</h3>
               <p>
-                Manual provisioning and ticket queues are expensive - in time
-                and money. Telenor's Platform’s self-service model includes:
+                Manual provisioning and ticket queues are expensive - both in 
+                time and money. Telenor's Platform’s self-service model includes:
               </p>
               <ul>
                 <li>Quotas and policy-driven access</li>
@@ -140,7 +140,7 @@ const Content = () => {
                   <b>Policy-as-Code</b> for programmable security rules
                 </li>
                 <li>
-                  <b>RBAC</b> to manage permissions cleanly and safely
+                  <b>RBAC</b> to manage permissions structured and safely
                 </li>
                 <li>
                   <b>Mature templates</b> to standardize secure deployments
@@ -161,7 +161,7 @@ const Content = () => {
               <p>
                 The result? Higher productivity, lower burnout, and stronger
                 engineering culture - backed by industry research like the 2024
-                DORA report.
+                DORA report (Accelerate state of DevOps).
               </p>
             </Drawer>
           </ContentDrawers>
@@ -180,10 +180,10 @@ const Content = () => {
                 infrastructure isn’t optional - it’s mission-critical. Telenor's
                 Platform is built with security and privacy at its core, using a
                 multi-layered defense strategy grounded in industry best
-                practices and the operational rigor of Telenor. From encryption
-                to incident response, Telenor's Platform gives you the
-                confidence to build, scale, and inTelenor's Platformte - without
-                compromising safety.
+                practices and the operational excellency you expect from Telenor. 
+                From encryption to incident response, Telenor's Platform gives you
+                the confidence to build, scale, and succeed - 
+                without compromising safety.
               </p>
             </>
           }
@@ -224,7 +224,7 @@ const Content = () => {
                   <b>Strong Encryption Standards</b> to protect data integrity
                 </li>
                 <li>
-                  <b>Routine Disaster Recovery Drills</b> to ensure platform
+                  <b>Routine Disaster Recovery training</b> to ensure platform
                   resilience
                 </li>
                 <li>
@@ -287,10 +287,10 @@ const Content = () => {
               <h2>Embrace Cloud‑Native Freedom</h2>
               <p>
                 Cloud‑native isn’t just a buzzword - it’s a mindset. By
-                combining microservice architecture, containerization, and
-                DevSecOps, Telenor's Platform unleashes flexible, scalable, and
+                combining microservice architecture, containerization and
+                DevSecOps, Telenor's Platform unleashes flexible, scalable and
                 secure applications that thrive in any environment. Build fast,
-                scale effortlessly, and sleep soundly knowing security travels
+                scale effortlessly and sleep soundly knowing security travels
                 with every deploy.
               </p>
             </>
@@ -350,7 +350,7 @@ const Content = () => {
           imageAlt="An GitOps automation illustration showing the four principles: Visibility, Security, Rollbacks, and Collaboration"
           description={
             <>
-              <h2>Ship with Confidence through GitOps</h2>
+              <h2>Ship with confidence through GitOps</h2>
               <p>
                 GitOps puts both your code and infrastructure in Git
                 repositories, creating a single source of truth. Every change -
@@ -410,9 +410,9 @@ const Content = () => {
             <>
               <h2>Unlock Data and AI Excellence with Telenor's Platform</h2>
               <p>
-                Telenor's Platform weaves best‑in‑class DataOps, analytics, and
+                Telenor's Platform weaves best‑in‑class DataOps, analytics and
                 machine‑learning tools into one seamless platform. From
-                reproducible data transformations to production‑grade AI, your
+                reproducible data transformations to production‑grade AI. Your
                 teams get everything they need to turn raw data into real‑time
                 insights and intelligent products - minus the complexity.
               </p>
@@ -434,7 +434,7 @@ const Content = () => {
               </p>
             </Drawer>
             <Drawer title="Seamless Data Integration">
-              <h3>AirByte moves data wherever it needs to go</h3>
+              <h3>AirByte moves your data wherever it needs to go</h3>
               <p>
                 Hundreds of pre‑built connectors sync sources to your warehouse
                 with minimal setup and zero hand‑rolled ETL scripts.
@@ -468,7 +468,7 @@ const Content = () => {
               </h3>
               <p>
                 By unifying data and AI tooling under Telenor's Platform, teams
-                iterate quickly, reduce maintenance toil, and surface insights
+                iterate quickly, reduce maintenance toil and surface insights
                 that propel the business forward.
               </p>
             </Drawer>
@@ -486,7 +486,7 @@ const Content = () => {
               <p>
                 Telenor's Platform lets you run workloads on Azure and Google
                 Cloud without the usual headaches. By unifying dev workflows,
-                IaC, security, CI/CD, and observability, it delivers a seamless
+                IaC, security, CI/CD and observability, it delivers a seamless
                 multi‑cloud experience that keeps governance tight and overhead
                 low.
               </p>
@@ -518,19 +518,19 @@ const Content = () => {
             <Drawer title="Centralized Security & Compliance">
               <h3>Guardrails that travel with your workloads</h3>
               <p>
-                Shared DevSecOps pipelines, RBAC, and policy checks keep
+                Shared DevSecOps pipelines, RBAC and policy checks keep
                 standards intact whether you deploy to Azure or GCP.
               </p>
             </Drawer>
             <Drawer title="End‑to‑End CI/CD Pipelines">
               <h3>Build once, deploy anywhere</h3>
               <p>
-                Automated pipelines handle container builds, tests, and rollouts
+                Automated pipelines handle container builds, tests and rollouts
                 consistently.
               </p>
             </Drawer>
             <Drawer title="Observability Under One Roof">
-              <h3>Unified dashboards for logs, metrics, and traces</h3>
+              <h3>Unified dashboards for logs, metrics and traces</h3>
               <p>
                 Visiblility with the same tools that let you troubleshoot and
                 optimize without juggling multiple monitoring tools.
@@ -556,8 +556,8 @@ const Content = () => {
                 Telenor’s dynamic landscape and keep developers in flow. Six
                 interconnected pillars - Platform Development, Service Delivery,
                 People & Organization, Technology & Architecture, Performance
-                Management, and Governance - work together so you can ship
-                cloud‑native applications faster, safer, and with less friction.
+                Management and Governance - work together so you can ship
+                cloud‑native applications faster, safer and with less friction.
               </p>
             </>
           }
@@ -567,7 +567,7 @@ const Content = () => {
               <h3>Community‑driven features, product mindset</h3>
               <p>
                 We treat Telenor's Platform as a product: capturing demands,
-                prioritizing by value, and releasing in a steady DevSecOps
+                prioritizing by value and releasing in a steady DevSecOps
                 cadence. Quarterly intake sessions ensure the roadmap reflects
                 both strategic goals and day‑to‑day developer pain points.
               </p>
@@ -604,9 +604,9 @@ const Content = () => {
               </p>
             </Drawer>
             <Drawer title="Transparent Roadmaps">
-              <h3>Vote, track, and trust the journey</h3>
+              <h3>Vote, track and trust the journey</h3>
               <p>
-                An open roadmap lets every user see what’s coming, cast votes,
+                An open roadmap lets every user see what’s coming, cast votes
                 and follow progress - creating a culture of collaboration and
                 continuous improvement.
               </p>
