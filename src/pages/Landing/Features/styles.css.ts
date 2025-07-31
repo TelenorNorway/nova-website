@@ -1,11 +1,10 @@
-import { style } from '@vanilla-extract/css';
-
+import { style, globalStyle } from "@vanilla-extract/css";
 
 export const container = style({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "flex-start",
-  margin: "40px auto 0",
+  margin: "80px auto",
   "@media": {
     "screen and (max-width: 768px)": {
       flexDirection: "column",
@@ -25,29 +24,33 @@ export const features = style({
 });
 
 export const feature = style({
-    background: 'rgba(255, 255, 255, 1)',
-    color: 'black',
-    textAlign: 'center',
-    backdropFilter: 'blur(14px)',
-    padding: '32px 24px',
-    borderRadius: '18px',
-    flex: 1,
+  color: "white",
+  textAlign: "center",
+  backdropFilter: "blur(14px)",
+  padding: "32px 24px",
+  borderRadius: "18px",
+  flex: 1,
 });
 
 export const featureIcon = style({
-    fontSize: '2rem',
-    marginBottom: '16px',
-    background: 'var(--bg-grad)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
+  fontSize: "2rem",
+  marginBottom: "16px",
+  background: "var(--bg-grad)",
+  WebkitBackgroundClip: "text",
+});
+
+export const icon = globalStyle(`${featureIcon} svg`, {
+  width: 60,
+  height: 60,
+  strokeWidth: 1,
 });
 
 export const featureHeading = style({
-    fontSize: '1.25rem',
-    marginBottom: '8px',
+  fontSize: "1.25rem",
+  marginBottom: "8px",
 });
 
 export const featureParagraph = style({
-    fontSize: '0.95rem',
-    lineHeight: '1.45',
+  fontSize: "0.95rem",
+  lineHeight: "1.45",
 });

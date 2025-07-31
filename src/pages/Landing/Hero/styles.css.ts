@@ -26,6 +26,7 @@ export const heroH1 = style({
 
 export const ctaBtn = style({
   background: "var(--blue)",
+  display: "inline-block",
   border: "none",
   padding: "16px 32px",
   borderRadius: "25px",
