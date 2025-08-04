@@ -1,15 +1,30 @@
-import { style } from '@vanilla-extract/css';
+import { style, fontFace } from "@vanilla-extract/css";
 
 const light = "#ffffff";
 
+const evolution = fontFace([
+  {
+    src: 'url("font/TelenorEvolution-Bold.otf") format("opentype")',
+    fontWeight: "bold",
+  },
+  {
+    src: 'url("font/TelenorEvolution-Light.otf") format("opentype")',
+    fontWeight: "light",
+  },
+  {
+    src: 'url("font/TelenorEvolution-Normal.otf") format("opentype")',
+    fontWeight: "normal",
+  },
+]);
+
 export const container = style({
-    fontFamily: "Inter, sans-serif",
-    color: light,
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    overflowX: "hidden",
-    background: `
+  fontFamily: evolution,
+  color: light,
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  overflowX: "hidden",
+  background: `
     /* 1. Magenta flare in the bottom‑left */
     radial-gradient(
       circle at 0% 100%,           /* anchor bottom‑left */
@@ -30,9 +45,9 @@ export const container = style({
       #453adf 100%
     )
     `,
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
-    backgroundSize: "cover"
+  backgroundRepeat: "no-repeat",
+  backgroundAttachment: "fixed",
+  backgroundSize: "cover",
 });
 
 export const innerContainer = style({
