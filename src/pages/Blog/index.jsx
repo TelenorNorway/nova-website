@@ -15,7 +15,7 @@ const Blog = () => {
       <Head>
         <title>{`${blog.metadata.title} | The Techy Tech Blog`}</title>
         <meta property="og:title" content={blog.metadata.title} />
-        <meta property="og:url" content={`http://telenornorway.github.io/nova-website/blog/${slug}`} />
+        <meta property="og:url" content={`https://cloud.telenor.no/blog/${slug}`} />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
@@ -23,7 +23,7 @@ const Blog = () => {
         />
         <meta
           property="og:image"
-          content={`http://telenornorway.github.io${blog.metadata.image}`}
+          content={`https://cloud.telenor.no${blog.metadata.image}`}
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -32,10 +32,10 @@ const Blog = () => {
           name="twitter:description"
           content={blog.metadata.description}
         />
-        <meta name="twitter:url" content={`http://telenornorway.github.io/nova-website/blog/${slug}`} />
+        <meta name="twitter:url" content={`https://cloud.telenor.no/blog/${slug}`} />
         <meta
           name="twitter:image"
-          content={`http://telenornorway.github.io${blog.metadata.image}`}
+          content={`https://cloud.telenor.no${blog.metadata.image}`}
         />
       </Head>
       <BlogComponent blog={blog} />

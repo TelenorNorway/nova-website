@@ -8,7 +8,6 @@ import generateRss from "./plugins/vite-plugin-generate-rss";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/nova-website/",
   plugins: [
     { enforce: "pre", ...mdx() },
     generateRss(),
