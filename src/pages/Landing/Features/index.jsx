@@ -2,8 +2,8 @@ import GlassmorphicBox from '../../../components/GlassmorphicBox';
 import { Rocket, Lock, SatelliteDish } from "lucide-react";
 import { container, features, feature, featureIcon, featureHeading, featureParagraph } from './styles.css';
 
-const Feature = ({ icon, heading, children }) => (
-    <GlassmorphicBox className={feature}>
+const Feature = ({ icon, heading, to = "features", children }) => (
+    <GlassmorphicBox className={feature} to={to}>
         <div className={featureIcon}>{icon}</div>
         <h3 className={featureHeading}>{heading}</h3>
         <p className={featureParagraph}>{children}</p>
