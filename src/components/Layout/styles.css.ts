@@ -4,15 +4,15 @@ const light = "#ffffff";
 
 const evolution = fontFace([
   {
-    src: 'url("font/TelenorEvolution-Bold.otf") format("opentype")',
+    src: 'url("/font/TelenorEvolution-Bold.otf") format("opentype")',
     fontWeight: "bold",
   },
   {
-    src: 'url("font/TelenorEvolution-Light.otf") format("opentype")',
+    src: 'url("/font/TelenorEvolution-Light.otf") format("opentype")',
     fontWeight: "light",
   },
   {
-    src: 'url("font/TelenorEvolution-Normal.otf") format("opentype")',
+    src: 'url("/font/TelenorEvolution-Normal.otf") format("opentype")',
     fontWeight: "normal",
   },
 ]);

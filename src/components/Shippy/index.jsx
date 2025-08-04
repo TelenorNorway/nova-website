@@ -2,12 +2,12 @@ import { useState } from 'react';
 
 import shippyDefault from './img/shippy6.png?w=300&h=300&format=webp';
 import shippyRadio from './img/shippy2.png?w=300&h=300&format=webp';
-import shippyConfused from './img/shippy7.png?w=300&h=300&format=webp';
+import shippyConfused from './img/shippy7.png?w=243&h=300&format=webp';
 import { shippy, floatingHeart } from "./styles.css";   
 
 const heartColors = ['#ff5a8a', '#ffb3c6', '#ff6f91', '#ff99ac', '#ff477e'];
 
-const Shippy = ({ variation = "default" }) => {
+const Shippy = ({ variation = "default", ...props }) => {
   const [hearts, setHearts] = useState([]);
 
   const handleShippyClick = (e) => {
@@ -51,10 +51,11 @@ const Shippy = ({ variation = "default" }) => {
         className={shippy}
         fetchPriority='high'
         src={imgSrc}
-        width={300}
+        width={variation === "confused" ? 243 : 300}
         height={300}
         alt="Shippy the pup smiles at you"
         onClick={handleShippyClick}
+        {...props}
       />
     </>
   );

@@ -2,13 +2,13 @@ import { style } from "@vanilla-extract/css";
 
 export const hero = style({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "flex-end",
   alignItems: "center",
   maxWidth: "1400px",
   width: "100%",
   margin: "40px auto 0",
   "@media": {
-    "screen and (max-width: 1000px)": {
+    "screen and (max-width: 1200px)": {
       flexDirection: "column",
     },
   },

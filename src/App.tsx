@@ -1,26 +1,4 @@
-import React from "react";
 import type { RouteRecord } from 'vite-react-ssg'
-
-/*
-function App() {
-  return (
-    <HashRouter>
-      <Routes>
-        <Route index element={<Landing />} />
-        <Route path="features" element={<Features />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="blog">
-            <Route index element={<BlogList />} />
-            <Route path=":slug" element={<Blog />} />
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </HashRouter>
-  );
-}
-
-export default App;
-*/
 
 export const routes: RouteRecord[] = [
     {
