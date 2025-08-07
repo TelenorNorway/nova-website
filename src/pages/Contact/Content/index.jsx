@@ -44,11 +44,7 @@ const Content = () => {
           <div>
             <h2>Internal Slack</h2>
             <p>
-              If you are Telenor internal, use the{" "}
-              <a href="https://thedoozers.slack.com/archives/C01Q23VMRU3">
-                #nova-support
-              </a>{" "}
-              Slack channel.
+              If you are Telenor internal, use the #nova-support Slack channel.
             </p>
           </div>
         </GlassmorphicBox>
