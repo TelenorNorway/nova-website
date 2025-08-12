@@ -57,3 +57,18 @@ export const box = style({
         },
     },
 });
+
+export const logoAndText = style({
+    display: "flex",
+    alignItems: "center",
+    gap: "24px",
+});
+
+export const logo = style({
+    width: 48,
+    textAlign: "center",
+});
+
+export const text = style({
+    flex: 1,
+});
