@@ -72,3 +72,13 @@ export const logo = style({
 export const text = style({
     flex: 1,
 });
+
+export const workWithUs = style({
+    marginTop: "32px",
+    textAlign: "center",
+});
+
+export const intro = style({
+    textAlign: "center",
+    marginBottom: "32px",
+});

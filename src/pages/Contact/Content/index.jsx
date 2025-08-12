@@ -10,6 +10,8 @@ import {
   logoAndText,
   logo,
   text,
+  workWithUs,
+  intro,
 } from "./styles.css";
 import GlassmorphicBox from "../../../components/GlassmorphicBox";
 
@@ -22,9 +24,11 @@ const Content = () => {
         </h1>
 
         <GlassmorphicBox className={box}>
-          We would love to talk with you!
-          <br />
-          There are a few ways to get in touch with us
+          <div className={intro}>
+            We would love to talk with you!
+            <br />
+            There are a few ways to get in touch with us:
+          </div>
           <div className={logoAndText}>
             <div className={logo}>
               <Slack />
@@ -79,6 +83,19 @@ const Content = () => {
                 channel.
               </p>
             </div>
+          </div>
+          <div className={workWithUs}>
+            Want to work with us?
+            <p>
+              We're always looking for great people. Read{" "}
+              <a
+                target="_blank"
+                href="https://www.telenor.no/om/jobbitelenor/verdens_beste_utvikleropplevelse"
+              >
+                our story
+              </a>
+              .
+            </p>
           </div>
         </GlassmorphicBox>
       </div>
