@@ -16,9 +16,9 @@ const Heading = () => {
           src={logoSrc}
           width={21}
           height={30}
-          alt="Telenor's Platform logo"
+          alt="Telenor's Cloud Platform logo"
         />
-        Telenor's Platform
+        Telenor's Cloud Platform
       </Link>
       <nav className={navLinks}>
         {routes.map((route) =>

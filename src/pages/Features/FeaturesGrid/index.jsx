@@ -18,7 +18,7 @@ const FeaturesGrid = () => {
       <div className={leftSection}>
         <h1 className={h1}>Features that spark joy</h1>
         <p className={subtext}>
-          Which feature in Telenor's platform do you want to learn about today?
+          Which feature in Telenor's Cloud Platform do you want to learn about today?
         </p>
 
         <div className={featuresGrid}>
