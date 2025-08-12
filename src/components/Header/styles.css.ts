@@ -9,7 +9,7 @@ export const navbar = style({
   width: "100%",
   margin: "0 auto",
   "@media": {
-    "screen and (max-width: 768px)": {
+    "screen and (max-width: 1024px)": {
       justifyContent: "space-between",
     },
   },
@@ -32,7 +32,7 @@ export const navLinks = style({
   gap: "32px",
   fontWeight: 500,
   "@media": {
-    "screen and (max-width: 768px)": {
+    "screen and (max-width: 1024px)": {
       display: "none",
     },
   },
@@ -41,7 +41,7 @@ export const navLinks = style({
 export const hamburger = style({
   display: "none",
   "@media": {
-    "screen and (max-width: 768px)": {
+    "screen and (max-width: 1024px)": {
       display: "block",
     },
   },

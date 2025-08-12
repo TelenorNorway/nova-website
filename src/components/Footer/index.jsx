@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className={text}>
       <p>
-        Made with ❤️ by <a href="https://telenor.no">Telenor</a>
+        Made with 💙️ by <a href="https://telenor.no">Telenor</a>
       </p>
       <div className={links}>
         <a target="_blank" href="https://www.telenor.com/privacy-notice/">

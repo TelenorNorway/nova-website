@@ -14,7 +14,7 @@ const Hero = () => {
     <section className={hero}>
       <div className={heroCopy}>
         <h1 className={heroH1}>
-          The&nbsp;cloud‑native platform for Kubernetes.
+          The&nbsp;cloud‑native platform for Kubernetes
         </h1>
         <Link to="/features" className={ctaBtn}>Get Started</Link>
       </div>
