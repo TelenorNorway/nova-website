@@ -6,9 +6,25 @@ export const feature = style({
     position: "relative",
     transition: "box-shadow 0.2s, top 0.2s",
     top: 0,
-    ":hover": {
-        boxShadow: "0 14px 40px rgba(0, 0, 0, 0.3)",
-        top: -2,
+    selectors: {
+        "&::after": {
+            content: '""',
+            position: "absolute",
+            inset: 0,
+            pointerEvents: "none",
+            borderRadius: "16px",
+            boxShadow:
+                "0 0 0 1px rgba(255,255,255,0.25), 0 0 16px rgba(0,153,255,0.35)",
+            opacity: 0,
+            transition: "opacity 0.2s ease",
+        },
+        "&:hover": {
+            boxShadow: "0 14px 40px rgba(0, 0, 0, 0.3)",
+            top: -2,
+        },
+        "&:hover::after": {
+            opacity: 1,
+        },
     },
 });
 
