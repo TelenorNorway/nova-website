@@ -10,7 +10,7 @@ const Layout = ({ className, children, ...props }) => {
     <>
       <Head>
         {/* The default title if not overridden by a page */}
-        <title>Telenor's Cloud Platform</title>
+        <title>Telenor's Developer Platform</title>
       </Head>
       <div className={cx(container, className)} {...props}>
         <div className={innerContainer}>

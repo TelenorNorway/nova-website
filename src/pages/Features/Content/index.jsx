@@ -31,44 +31,41 @@ const Content = () => {
     <section>
       <div className={mainSection}>
         <Section
-          title="Organizational Transformation"
-          id="organizational-transformation"
+          title="A platform that you can trust"
+          id="platform"
           image={image}
           imageAlt="Organizational transformation illustration showing Nova's makeup of services and technologies"
           description={
             <>
-              <h2>Build Better, Ship Faster</h2>
+              <h2>Ship faster with fewer surprises</h2>
               <p>
-                Telenor's Cloud Platform isn’t just a platform - it’s a mindset
-                shift. By embracing GitOps, DevSecOps, and self-service
-                principles, your organization cultivates a high-trust,
-                high-velocity engineering culture. With Telenor's Cloud Platform
-                as your foundation, you’re not just accelerating delivery -
-                you’re building the future of cloud-native resilience and
-                innovation.
+                Telenor's Developer Platform leans hard into GitOps, DevSecOps and
+                self‑service. Infrastructure and apps are versioned, reviewed
+                and repeatable. Fewer tickets, less drift, more reliable
+                deploys.
               </p>
             </>
           }
         >
           <ContentDrawers>
             <Drawer title="GitOps-Driven Control">
-              Telenor's Cloud Platform empowers teams with version-controlled
-              infrastructure and application delivery. Changes are transparent,
-              auditable, and reversible - enabling safer and faster deployments
-              at scale.
+              Telenor's Developer Platform empowers teams with
+              version-controlled infrastructure and application delivery.
+              Changes are transparent, auditable, and reversible - enabling
+              safer and faster deployments at scale.
             </Drawer>
             <Drawer title="DevSecOps by Design">
-              Woven into the core of the platform, Telenor's Cloud Platform
+              Woven into the core of the platform, Telenor's Developer Platform
               promotes proactive threat mitigation, compliance automation, and
               secure-by-default practices from day one.
             </Drawer>
             <Drawer title="Developer Self-Service">
               Give your teams the autonomy to spin up environments, deploy
               services and manage infrastructure without waiting on ops.
-              Telenor's Cloud Platform puts power in their hands - safely.
+              Telenor's Developer Platform puts power in their hands - safely.
             </Drawer>
             <Drawer title="Effortless Scalability">
-              Telenor's Cloud Platform adapts to your needs, whether you're
+              Telenor's Developer Platform adapts to your needs, whether you're
               serving ten or ten million users. Its scalable architecture
               ensures consistent performance and reliability at every stage.
             </Drawer>
@@ -108,7 +105,7 @@ const Content = () => {
             <Drawer title="Speed as a Competitive Advantage">
               <h3>Reduce friction between idea and execution</h3>
               <p>
-                Telenor's Cloud Platform lets developers provision
+                Telenor's Developer Platform lets developers provision
                 infrastructure instantly within policy-defined boundaries. That
                 means:
               </p>
@@ -123,8 +120,8 @@ const Content = () => {
               <h3>Say goodbye to bottlenecks and ballooning budgets</h3>
               <p>
                 Manual provisioning and ticket queues are expensive - both in
-                time and money. Telenor's Cloud Platform’s self-service model
-                includes:
+                time and money. Telenor's Developer Platform’s self-service
+                model includes:
               </p>
               <ul>
                 <li>Quotas and policy-driven access</li>
@@ -135,9 +132,9 @@ const Content = () => {
             <Drawer title="Security and Compliance at Scale">
               <h3>Self-service doesn’t mean chaos</h3>
               <p>
-                Telenor's Cloud Platform embeds guardrails that enforce security
-                and compliance, ensuring every deployment aligns with org-wide
-                policies. Core features include:
+                Telenor's Developer Platform embeds guardrails that enforce
+                security and compliance, ensuring every deployment aligns with
+                org-wide policies. Core features include:
               </p>
               <ul>
                 <li>
@@ -155,7 +152,8 @@ const Content = () => {
               <h3>Frictionless workflows that retain top talent</h3>
               <p>
                 Engineers thrive when they can move fast without red tape.
-                Telenor's Cloud Platform enhances the developer journey with:
+                Telenor's Developer Platform enhances the developer journey
+                with:
               </p>
               <ul>
                 <li>Intuitive UIs for managing resources</li>
@@ -163,9 +161,9 @@ const Content = () => {
                 <li>Built-in observability for debugging and insights</li>
               </ul>
               <p>
-                The result? Higher productivity, lower burnout, and stronger
-                engineering culture - backed by industry research like the 2024
-                DORA report (Accelerate state of DevOps).
+                We do this because industry research like the 2024 DORA report
+                (Accelerate state of DevOps) indicates that the result is higher
+                productivity, lower burnout, and stronger engineering culture.
               </p>
             </Drawer>
           </ContentDrawers>
@@ -196,8 +194,8 @@ const Content = () => {
             <Drawer title="Defense-in-Depth by Design">
               <h3>Security isn’t an add-on - it’s a foundation</h3>
               <p>
-                Telenor's Cloud Platform includes multiple integrated security
-                layers to proactively defend against threats:
+                Telenor's Developer Platform includes multiple integrated
+                security layers to proactively defend against threats:
               </p>
               <ul>
                 <li>
@@ -227,9 +225,9 @@ const Content = () => {
               <h3>Proven, enterprise-grade security from day one</h3>
               <p>
                 Telenor’s deep experience in managing critical infrastructure
-                forms the foundation for Telenor's Cloud Platform’s security
-                posture. Telenor's Cloud Platform follows Telenor’s Defendable
-                Architecture principles, delivering:
+                forms the foundation for Telenor's Developer Platform’s security
+                posture. Telenor's Developer Platform follows Telenor’s
+                Defendable Architecture principles, delivering:
               </p>
               <ul>
                 <li>
@@ -252,8 +250,8 @@ const Content = () => {
             <Drawer title="Privacy-First Principles">
               <h3>Data privacy is more than compliance - it’s a promise</h3>
               <p>
-                Telenor's Cloud Platform takes a holistic approach to privacy by
-                embedding protections into every layer:
+                Telenor's Developer Platform takes a holistic approach to
+                privacy by embedding protections into every layer:
               </p>
               <ul>
                 <li>
@@ -298,12 +296,12 @@ const Content = () => {
             <>
               <h2>Embrace Cloud‑Native Freedom</h2>
               <p>
-                Cloud‑native isn’t just a buzzword - it’s a mindset. By
-                combining microservice architecture, containerization and
-                DevSecOps, Telenor's Cloud Platform unleashes flexible, scalable
-                and secure applications that thrive in any environment. Build
-                fast, scale effortlessly and sleep soundly knowing security
-                travels with every deploy.
+                Cloud‑native is at the heart of all we do. By combining
+                microservice architecture, containerization and DevSecOps,
+                Telenor's Developer Platform unleashes flexible, scalable and
+                secure applications that thrive in any environment. Build fast,
+                scale effortlessly and sleep soundly knowing security travels
+                with every deploy.
               </p>
             </>
           }
@@ -421,14 +419,15 @@ const Content = () => {
           description={
             <>
               <h2>
-                Unlock Data and AI Excellence with Telenor's Cloud Platform
+                Unlock Data and AI Excellence with Telenor's Developer Platform
               </h2>
               <p>
-                Telenor's Cloud Platform weaves best‑in‑class DataOps, analytics
-                and machine‑learning tools into one seamless platform. From
-                reproducible data transformations to production‑grade AI. Your
-                teams get everything they need to turn raw data into real‑time
-                insights and intelligent products - minus the complexity.
+                Telenor's Developer Platform weaves best‑in‑class DataOps,
+                analytics and machine‑learning tools into one seamless platform.
+                From reproducible data transformations to production‑grade AI.
+                Your teams get everything they need to turn raw data into
+                real‑time insights and intelligent products - minus the
+                complexity.
               </p>
               <p>
                 It's time to make smarter decisions and more intelligent
@@ -481,9 +480,9 @@ const Content = () => {
                 One cohesive environment equals less overhead, more impact
               </h3>
               <p>
-                By unifying data and AI tooling under Telenor's Cloud Platform,
-                teams iterate quickly, reduce maintenance toil and surface
-                insights that propel the business forward.
+                By unifying data and AI tooling under Telenor's Developer
+                Platform, teams iterate quickly, reduce maintenance toil and
+                surface insights that propel the business forward.
               </p>
             </Drawer>
           </ContentDrawers>
@@ -496,9 +495,9 @@ const Content = () => {
           imageAlt="An abstract illustration of a multi-cloud architecture with Azure and Google Cloud logos"
           description={
             <>
-              <h2>One Platform, Endless Cloud Freedom</h2>
+              <h2>A Multi-Cloud Strategy</h2>
               <p>
-                Telenor's Cloud Platform lets you run workloads on Azure and
+                Telenor's Developer Platform lets you run workloads on Azure and
                 Google Cloud without the usual headaches. By unifying dev
                 workflows, IaC, security, CI/CD and observability, it delivers a
                 seamless multi‑cloud experience that keeps governance tight and
@@ -554,24 +553,25 @@ const Content = () => {
         </Section>
 
         <Section
-          title="Operational Model"
-          id="operational-model"
+          title="Governance"
+          id="governance"
           image={image12}
-          imageAlt="An abstract illustration of Telenor's Cloud Platform's operating model with various symbols representing its components"
+          imageAlt="An abstract illustration of Telenor's Developer Platform's operating model with various symbols representing its components"
           description={
             <>
               <h2>
-                Telenor's Cloud Platform’s Operating Model: Built for Continuous
-                Evolution
+                Telenor's Developer Platform’s Operating Model: Built for
+                Continuous Evolution
               </h2>
               <p>
-                Telenor's Cloud Platform isn’t just a platform - it’s a living
-                ecosystem. Our operating model is refined every quarter to match
-                Telenor’s dynamic landscape and keep developers in flow. Six
-                interconnected pillars - Platform Development, Service Delivery,
-                People & Organization, Technology & Architecture, Performance
-                Management and Governance - work together so you can ship
-                cloud‑native applications faster, safer and with less friction.
+                Telenor's Developer Platform isn’t just a platform - it’s a
+                living ecosystem. Our operating model is refined every quarter
+                to match Telenor’s dynamic landscape and keep developers in
+                flow. Six interconnected pillars - Platform Development, Service
+                Delivery, People & Organization, Technology & Architecture,
+                Performance Management and Governance - work together so you can
+                ship cloud‑native applications faster, safer and with less
+                friction.
               </p>
             </>
           }
@@ -580,7 +580,7 @@ const Content = () => {
             <Drawer title="Platform Development">
               <h3>Community‑driven features, product mindset</h3>
               <p>
-                We treat Telenor's Cloud Platform as a product: capturing
+                We treat Telenor's Developer Platform as a product: capturing
                 demands, prioritizing by value and releasing in a steady
                 DevSecOps cadence. Quarterly intake sessions ensure the roadmap
                 reflects both strategic goals and day‑to‑day developer pain
@@ -613,8 +613,8 @@ const Content = () => {
             <Drawer title="“You Build It, You Run It”">
               <h3>Shared ownership drives quality</h3>
               <p>
-                Teams who create services on Telenor's Cloud Platform own them
-                in production, fostering accountability and a sustainable,
+                Teams who create services on Telenor's Developer Platform own
+                them in production, fostering accountability and a sustainable,
                 high‑performing ecosystem.
               </p>
             </Drawer>

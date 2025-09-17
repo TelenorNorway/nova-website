@@ -18,14 +18,14 @@ const FeaturesGrid = () => {
       <div className={leftSection}>
         <h1 className={h1}>Features that spark joy</h1>
         <p className={subtext}>
-          Which feature in Telenor's Cloud Platform do you want to learn about today?
+          Which feature in Telenor's Developer Platform do you want to learn about today?
         </p>
 
         <div className={featuresGrid}>
           <Feature
-            title="Organizational Transformation"
-            description="Transform your organization with Telenor"
-            href="#organizational-transformation"
+            title="Platform"
+            description="A platform that you can trust"
+            href="#platform"
             image={<SatelliteDish />}
           />
           <Feature
@@ -65,9 +65,9 @@ const FeaturesGrid = () => {
             image={<Cloud />}
           />
           <Feature
-            title="Operational Model"
-            description="Run your platform like a pro"
-            href="#operational-model"
+            title="Governance"
+            description="Evolving with your needs"
+            href="#governance"
             image={<MonitorPlay />}
           />
         </div>
