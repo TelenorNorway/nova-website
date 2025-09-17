@@ -13,7 +13,7 @@ const Blog = () => {
   return (
     <Layout>
       <Head>
-        <title>{`${blog.metadata.title} | The Techy Tech Blog`}</title>
+        <title>{`${blog.metadata.title} | The Cloud Tech Blog`}</title>
         <meta property="og:title" content={blog.metadata.title} />
         <meta property="og:url" content={`https://cloud.telenor.no/blog/${slug}`} />
         <meta property="og:type" content="website" />

@@ -5,7 +5,7 @@ import { container, h1 } from "./styles.css.ts";
 const Content = () => {
     return (
       <section className={container}>
-        <h1 className={h1}>The Techy Tech Blog</h1>
+        <h1 className={h1}>The Cloud Tech Blog</h1>
         {Object.values(blogs)
           .sort((blog) => blog.metadata.date)
           .map((blog, key) => {

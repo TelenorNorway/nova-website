@@ -72,7 +72,7 @@ export default function generateRss(): Plugin {
       const rss = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-  <title>The Techy Tech Blog</title>
+  <title>The Cloud Tech Blog</title>
   <link>https://platform.telenor.no</link>
   <description>A blog about the latest Cloud Native technologies - With love from Telenor</description>
   ${items}
