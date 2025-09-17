@@ -507,47 +507,24 @@ const Content = () => {
           }
         >
           <ContentDrawers>
-            <Drawer title="Multi‑Cloud Flexibility">
-              <h3>Pick the best cloud for your workload</h3>
-              <p>
-                Move apps between Azure and Google Cloud on your terms – no
-                vendor lock‑in, no rewrites.
-              </p>
+            <Drawer title="Best-of-Breed Cloud Services">
+                <h3>We leverage the strengths of both Azure and GCP</h3>
+                <p>
+                    Telenor's Developer Platform is designed to use the best
+                    services from both Azure and Google Cloud. We curate an
+                    optimal mix of tools and services, ensuring you get the most
+                    value from each cloud provider.
+                </p>
             </Drawer>
-            <Drawer title="Unified Developer Experience">
-              <h3>Same smooth workflow, whichever cloud you choose</h3>
-              <p>
-                Deployment workflows, templates, and CLIs stay consistent, so
-                teams can focus on code, not cloud idiosyncrasies.
-              </p>
-            </Drawer>
-            <Drawer title="Infrastructure as Code Everywhere">
-              <h3>One repo, two clouds, zero drift</h3>
-              <p>
-                GitOps and IaC abstractions ensure environments are reproducible
-                and governed across providers.
-              </p>
-            </Drawer>
-            <Drawer title="Centralized Security & Compliance">
-              <h3>Guardrails that travel with your workloads</h3>
-              <p>
-                Shared DevSecOps pipelines, RBAC and policy checks keep
-                standards intact whether you deploy to Azure or GCP.
-              </p>
-            </Drawer>
-            <Drawer title="End‑to‑End CI/CD Pipelines">
-              <h3>Build once, deploy anywhere</h3>
-              <p>
-                Automated pipelines handle container builds, tests and rollouts
-                consistently.
-              </p>
-            </Drawer>
-            <Drawer title="Observability Under One Roof">
-              <h3>Unified dashboards for logs, metrics and traces</h3>
-              <p>
-                Visiblility with the same tools that let you troubleshoot and
-                optimize without juggling multiple monitoring tools.
-              </p>
+            <Drawer title="Competent Multi-Cloud Teams">
+                <h3>Skills that span clouds</h3>
+                <p>
+                    Telenor's Developer Platform builds platforms on both Azure
+                    and GCP, with a team that understands the nuances of each
+                    cloud provider. This ensures that your multi-cloud strategy
+                    is executed effectively, leveraging the strengths of both
+                    platforms.
+                </p>
             </Drawer>
           </ContentDrawers>
         </Section>
