@@ -1,1 +1,1 @@
-export * as Placeholder from './1-placeholder/index.mdx';
+export * as Launch from './1-launch/index.mdx';
