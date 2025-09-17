@@ -28,7 +28,7 @@ export const container = style({
     /* 1. Magenta flare in the bottom‑left */
     radial-gradient(
       circle at 0% 100%,           /* anchor bottom‑left */
-      #d21cdd 0%,                  /* vivid magenta center */
+      #00C8FF 0%,                  /* vivid magenta center */
       rgba(210, 28, 221, 0) 55%    /* fade to transparent */
     ),
     /* 2. Electric‑blue flare in the top‑right */
@@ -40,7 +40,7 @@ export const container = style({
     /* 3. Base sweep from deep indigo ➜ royal violet */
     linear-gradient(
       135deg,                      /* top‑left ➜ bottom‑right */
-      #140a56 0%,
+      #070452 0%,
       #1d1aa6 35%,
       #453adf 100%
     )
