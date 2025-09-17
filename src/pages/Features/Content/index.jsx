@@ -516,6 +516,15 @@ const Content = () => {
                     value from each cloud provider.
                 </p>
             </Drawer>
+            <Drawer title="Flexible abstractions">
+                <h3>Self service capabilities</h3>
+                <p>
+                    Telenor's Developer Platform builds self-service abstractions,
+                    allowing you to provision and manage resources
+                    on both Azure and Google Cloud. This flexibility enables
+                    faster experimentation and innovation.
+                </p>
+            </Drawer>
             <Drawer title="Competent Multi-Cloud Teams">
                 <h3>Skills that span clouds</h3>
                 <p>
