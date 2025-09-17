@@ -1,3 +1,0 @@
-# Disallow until launch
-User-agent: *
-Disallow: /
