@@ -47,7 +47,7 @@ export const rightSection = style({
 });
 
 export const box = style({
-    maxWidth: "100%",
+    maxWidth: 600,
     display: "flex !important",
     flexDirection: "column",
     gap: "16px",
