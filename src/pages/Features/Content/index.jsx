@@ -204,12 +204,20 @@ const Content = () => {
                   <b>Identity & Access Management (IAM)</b>: Enforces
                   fine-grained permissions so only the right people access the
                   right systems.
+                </li>
+                <li>
                   <b>End-to-End Data Protection:</b> Ensures data is encrypted
                   both at rest and in transit.
+                </li>
+                <li>
                   <b>Network Security:</b> Shields distributed systems from
                   unauthorized traffic.
+                </li>
+                <li>
                   <b>Compliance & Auditing:</b> Maintains regulatory adherence
                   through automated checks and MFA.
+                </li>
+                <li>
                   <b>Monitoring & Incident Response:</b> Enables fast detection
                   and containment of threats.
                 </li>
