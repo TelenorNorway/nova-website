@@ -1,4 +1,4 @@
-import { Boxes, Book, Rss, MessageCircleMore } from 'lucide-react';
+import { Boxes, Rss, MessageCircleMore } from 'lucide-react';
 
 export const routes = [
     {
@@ -10,11 +10,6 @@ export const routes = [
         title: "Tech Blog",
         to: "/blog",
         Icon: () => <Rss />
-    },
-    {
-        title: "Documentation",
-        href: "https://nova.telenor.net",
-        Icon: () => <Book />
     },
     {
         title: "Contact",
