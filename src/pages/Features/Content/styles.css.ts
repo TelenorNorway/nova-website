@@ -25,8 +25,9 @@ globalStyle(`${mainSection} ol`, {
 globalStyle(`${mainSection} img`, {
     display: "block",
     margin: "0 auto",
-    maxWidth: "100%",
+    maxHeight: 450,
     width: "100%",
+    objectFit: "contain",
     borderRadius: "8px",
 });
 
