@@ -23,7 +23,7 @@ const FeaturesGrid = () => {
 
         <div className={featuresGrid}>
           <Feature
-            title="Platform"
+            title="Developer Platform"
             description="A platform that you can trust"
             href="#platform"
             image={<SatelliteDish />}
