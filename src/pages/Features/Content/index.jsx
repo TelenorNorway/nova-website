@@ -497,11 +497,10 @@ const Content = () => {
             <>
               <h2>A Multi-Cloud Strategy</h2>
               <p>
-                Telenor's Developer Platform lets you run workloads on Azure and
-                Google Cloud without the usual headaches. By unifying dev
-                workflows, IaC, security, CI/CD and observability, it delivers a
-                seamless multi‑cloud experience that keeps governance tight and
-                overhead low.
+                Telenor's Developer Platform supports running workloads on Azure
+                and Google Cloud. By unifying dev workflows, IaC, security,
+                CI/CD and observability, Telenor's Developer Platform delivers
+                experiences that keeps governance tight and overhead low.
               </p>
             </>
           }
