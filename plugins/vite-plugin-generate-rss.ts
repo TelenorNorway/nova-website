@@ -63,8 +63,8 @@ export default function generateRss(): Plugin {
     <description><![CDATA[${post.description || ''}]]></description>
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     <author>${author.name}</author>
-    <link>https://platform.telenor.no/blog/${post.slug}</link>
-    <guid>https://platform.telenor.no/blog/${post.slug}</guid>
+    <link>https://cloud.telenor.no/blog/${post.slug}</link>
+    <guid>https://cloud.telenor.no/blog/${post.slug}</guid>
   </item>`
         })
         .join('\n')
@@ -73,7 +73,7 @@ export default function generateRss(): Plugin {
 <rss version="2.0">
 <channel>
   <title>The Cloud Tech Blog</title>
-  <link>https://platform.telenor.no</link>
+  <link>https://cloud.telenor.no</link>
   <description>A blog about the latest Cloud Native technologies - With love from Telenor</description>
   ${items}
 </channel>
