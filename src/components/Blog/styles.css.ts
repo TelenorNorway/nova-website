@@ -47,6 +47,11 @@ globalStyle(`${blogText} p`, {
     margin: "revert"
 });
 
+globalStyle(`${blogText} ul`, {
+    listStyle: 'disc',
+    marginLeft: 25
+});
+
 export const authorBox = style({
     display: "inline-flex",
     alignItems: "center",
