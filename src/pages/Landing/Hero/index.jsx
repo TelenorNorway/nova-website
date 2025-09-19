@@ -3,11 +3,14 @@ import { hero, heroCopy, heroH1, ctaBtn, codeSnippet, heroIllus } from './styles
 import CodeBlock from '../../../components/CodeBlock';
 import Shippy from '../../../components/Shippy';
 
-const codeSnippetString = `# Your app, as simple as:
-image: my_container:1.2.0
-routes:
-  - url: myapp.example.com
-    route: /api`;
+const codeSnippetString = `# Your database, as simple as:
+apiVersion: azure.tnnova.io/v1alpha1
+kind: PostgreSQLServer
+metadata:
+  name: my-db
+spec:
+  compute:
+    size: Small`;
 
 const Hero = () => {
   return (

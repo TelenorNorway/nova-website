@@ -24,7 +24,7 @@ const Features = () => {
         <Feature
           to="features#self-service-infrastructure"
           icon={<Rocket width={48} height={48} />}
-          heading="Zero‑to‑prod in minutes"
+          heading="Deploy to prod in minutes"
         >
           Get your applications to customers quickly and reliably
         </Feature>
