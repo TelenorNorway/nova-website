@@ -15,9 +15,8 @@ export const img = style({
 
 export const blogText = style({
   fontSize: "1.125rem",
-  marginBottom: "16px",
   maxWidth: "70ch",
-  margin: "0 auto",
+  margin: "0 auto 16px",
 });
 
 export const truncate = style({
