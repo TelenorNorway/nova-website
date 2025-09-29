@@ -1,6 +1,6 @@
 import * as blogs from '../../../../blog';
 import Blog from '../../../components/Blog';
-import { container, h1 } from "./styles.css.ts";
+import { container, h1, blogClass } from "./styles.css.ts";
 
 const Content = () => {
     return (
@@ -14,6 +14,7 @@ const Content = () => {
                 key={key}
                 blog={blog}
                 linkTo={`/blog/${blog.metadata.slug}`}
+                className={blogClass}
                 truncateContent
               />
             );

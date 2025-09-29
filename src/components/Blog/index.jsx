@@ -16,7 +16,7 @@ import {
   authorName,
 } from "./styles.css.ts";
 
-const Blog = ({ blog, linkTo, truncateContent }) => {
+const Blog = ({ blog, linkTo, truncateContent, ...props }) => {
   const blogAuthors = blog.metadata.authors
     .map((author) => authors[author])
     .filter(Boolean);
@@ -24,23 +24,25 @@ const Blog = ({ blog, linkTo, truncateContent }) => {
   const Blog = blog.default;
 
   const blogContent = (
-    <div className={cx(blogText, { [truncate]: truncateContent })}>
-      <h2 className={subtext}>{blog.metadata.title}</h2>
-      <Blog />
-    </div>
+    <>
+      {blog.metadata.image && (
+        <img
+          src={blog.metadata.image}
+          alt={blog.metadata.title}
+          className={img}
+        />
+      )}
+      <div className={cx(blogText, { [truncate]: truncateContent })}>
+        <h2 className={subtext}>{blog.metadata.title}</h2>
+        <Blog />
+      </div>
+    </>
   );
 
   return (
-    <section>
+    <section {...props}>
       <article>
         <GlassmorphicBox>
-          {blog.metadata.image && (
-            <img
-              src={blog.metadata.image}
-              alt={blog.metadata.title}
-              className={img}
-            />
-          )}
           {!!linkTo ? <Link to={linkTo}>{blogContent}</Link> : blogContent}
           {!!linkTo && (
             <Link to={linkTo} className={readMore}>

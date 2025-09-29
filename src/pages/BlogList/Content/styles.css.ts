@@ -10,41 +10,9 @@ export const container = style({
 export const h1 = style({
   fontSize: "clamp(2.5rem, 5vw, 4.5rem)",
   lineHeight: 1.3,
-  marginBottom: "24px",
+  marginBottom: 24,
 });
 
-export const subtext = style({
-    fontSize: "1.2rem",
-    lineHeight: 1.5,
-    marginBottom: "32px",
-});
-
-export const img = style({
-    maxWidth: "70%",
-    height: "auto",
-    margin: "0 auto 24px",
-    display: "block",
-});
-
-export const blogText = style({
-    maxHeight: "250px",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    marginBottom: "16px",
-});
-
-export const date = style({
-    display: "block",
-    fontSize: "0.75rem",
-    float: "right",
-});
-
-export const readMore = style({
-    textDecoration: "underline",
-    textDecorationStyle: "dotted",
-    textDecorationThickness: 1,
-});
-
-globalStyle(`${blogText} p`, {
-    margin: "revert"
+export const blogClass = style({
+  marginBottom: 32,
 });
