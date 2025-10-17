@@ -7,7 +7,7 @@ const Content = () => {
       <section className={container}>
         <h1 className={h1}>The Cloud Tech Blog</h1>
         {Object.values(blogs)
-          .sort((blog) => blog.metadata.date)
+          .sort((a, b) => new Date(b.metadata.date) - new Date(a.metadata.date))
           .map((blog, key) => {
             return (
               <Blog
