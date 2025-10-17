@@ -45,6 +45,12 @@ export const readMore = style({
   textDecorationThickness: 1,
 });
 
+globalStyle(`${blogText} a`, {
+  textDecoration: "underline",
+  textDecorationStyle: "dotted",
+  textDecorationThickness: 1,
+});
+
 globalStyle(`${blogText} p`, {
   margin: "revert",
 });
