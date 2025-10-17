@@ -54,6 +54,13 @@ globalStyle(`${blogText} ul`, {
   marginLeft: 25,
 });
 
+globalStyle(`${blogText} img`, {
+  maxWidth: "100%",
+  height: "auto",
+  margin: "0 auto 24px",
+  display: "block",
+});
+
 export const authorBox = style({
   display: "inline-flex",
   alignItems: "center",
