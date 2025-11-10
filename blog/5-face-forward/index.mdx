@@ -1,8 +1,9 @@
 import image from "./image.png";
 import image2 from "./image2.jpeg";
 import image3 from "./image3.jpeg";
+import gameVideo from "./movie.mov";
 export const metadata = {
-    title: "Our booth at Telenor's Face Forward event",
+    title: "Nova's booth at Telenor's Face Forward event",
     description: "This wednesday, Telenor launched their new strategy called 'Face Forward'. The Nova cloud platform team held a booth where we let visitors try a game we developed called 'Legacy Terminator 3000'.",
     slug: "face-forward",
     image: image,
@@ -21,20 +22,27 @@ Terminator 3000", which visitors could try out right there at our stand.
 
 The idea of the game was to build a space ship using blocks. The ship needs engines,
 shields and weapons to be able to fly through space to destroy legacy systems and
-protect Telenor from evil corporate bureaucrats.
+protect Telenor from evil corporate bureaucrats. The more legacy systems you
+destroy, the higher score you get, so we had a leaderboard to display the top
+scores on a separate computer. This meant syncing scores between the game and the
+leaderboard in real-time, which was a fun technical challenge.
 
-The game was developed using vibe coding by our super talented Lead Architect Sindre
-(@sindrel). Vibe coding is a way of rapidly developing software using AI agents
-to help with coding tasks. Sindre used GPT-5? to help with generating code
-snippets, images and integrations. The game itself was built in JavaScript
-running in the browser with a backend in Python. The game was built in a few
-days, and was a fun way to showcase Nova.
+The game was developed from scratch using vibe coding by our super talented Lead
+Architect Sindre Lindstad. Vibe coding is a way of rapidly developing software
+using AI agents to help with coding tasks. Sindre used Claude Sonnet 4.5 to help
+with generating code snippets, images and integrations. The game itself was
+built in JavaScript running in the browser with a backend in Python. The game
+was built in a few days, and was a fun way to showcase Nova.
 
 In total, around 150 games were played during the event, with a lot of engagement and
-fun.
+good discussions.
 
 The winner of the game got a special prize consisting of a space ship LEGO set!
 Congratulations to the winner!
 
 <img src={image2} alt="The Telenor booth" />
 <img src={image3} alt="A visitor building a ship" />
+<video controls width="100%">
+    <source src={gameVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+</video>
