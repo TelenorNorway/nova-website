@@ -15,4 +15,5 @@ export const h1 = style({
 
 export const blogClass = style({
   marginBottom: 32,
+  width: "100%",
 });

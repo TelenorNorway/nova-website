@@ -4,7 +4,7 @@ import mats from './authors/mats.png';
 const authors = {
   "eline": {
     name: "Eline Henriksen",
-    role: "Lead Product Lead - Cloud Platforms",
+    role: "Head of Product - Cloud Platforms",
     image: eline,
     link: "https://eliine.dev", 
   },
