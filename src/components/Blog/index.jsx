@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import authors from "../../../blog/authors.js";
 import GlassmorphicBox from "../GlassmorphicBox";
 import {
+  blogBox,
   subtext,
   img,
   blogText,
@@ -42,7 +43,7 @@ const Blog = ({ blog, linkTo, truncateContent, ...props }) => {
   return (
     <section {...props}>
       <article>
-        <GlassmorphicBox>
+        <GlassmorphicBox className={blogBox}>
           {!!linkTo ? <Link to={linkTo}>{blogContent}</Link> : blogContent}
           {!!linkTo && (
             <Link to={linkTo} className={readMore}>

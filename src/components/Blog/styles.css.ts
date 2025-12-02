@@ -1,5 +1,9 @@
 import { style, globalStyle } from "@vanilla-extract/css";
 
+export const blogBox = style({
+  backgroundColor: "rgba(0, 0, 0, 0.2)",
+});
+
 export const subtext = style({
   fontSize: "2rem",
   lineHeight: 1.5,
