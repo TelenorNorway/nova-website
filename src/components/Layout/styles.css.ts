@@ -4,21 +4,33 @@ const light = "#ffffff";
 
 const evolution = fontFace([
   {
-    src: 'url("/font/TelenorEvolution-Bold.otf") format("opentype")',
-    fontWeight: "bold",
+    src: 'url("/font/TelenorEvolutionUI-Bold.woff2") format("woff2"), url("/font/TelenorEvolutionUI-Bold.woff") format("woff")',
+    fontWeight: 700,
   },
   {
-    src: 'url("/font/TelenorEvolution-Light.otf") format("opentype")',
-    fontWeight: "light",
+    src: 'url("/font/TelenorEvolutionUI-ExtraBoldSlanted.woff2") format("woff2"), url("/font/TelenorEvolutionUI-ExtraBoldSlanted.woff") format("woff")',
+    fontWeight: 800,
+    fontStyle: "italic",
   },
   {
-    src: 'url("/font/TelenorEvolution-Normal.otf") format("opentype")',
-    fontWeight: "normal",
+    src: 'url("/font/TelenorEvolutionUI-Light.woff2") format("woff2"), url("/font/TelenorEvolutionUI-Light.woff") format("woff")',
+    fontWeight: 300,
+  },
+  {
+    src: 'url("/font/TelenorEvolutionUI-Medium.woff2") format("woff2"), url("/font/TelenorEvolutionUI-Medium.woff") format("woff")',
+    fontWeight: 500,
+  },
+  {
+    src: 'url("/font/TelenorEvolutionUI-Normal.woff2") format("woff2"), url("/font/TelenorEvolutionUI-Normal.woff") format("woff")',
+    fontWeight: 400,
   },
 ]);
 
 export const container = style({
   fontFamily: evolution,
+  textRendering: "optimizeLegibility",
+  WebkitFontSmoothing: "antialiased",
+  MozOsxFontSmoothing: "grayscale",
   color: light,
   minHeight: "100vh",
   display: "flex",
