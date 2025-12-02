@@ -115,7 +115,7 @@ const Content = () => {
         <h1 className={heroTitle}>The Cloud Tech Blog</h1>
         <p className={heroDescription}>
           Stories and learnings from the teams building Telenor&rsquo;s cloud
-          platform. Dive into release notes, engineering spotlights, and best
+          platform. Dive into engaging stories, engineering spotlights, and best
           practices from the crews running critical infrastructure at scale.
         </p>
       </header>
