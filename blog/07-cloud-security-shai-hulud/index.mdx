@@ -1,0 +1,57 @@
+import image from "./image.png";
+export const metadata = {
+    title: "Telenor’s Cloud Security Team - Handling of the Shai-Hulud 2.0 ‘npm worm’",
+    description: "One of the responsibilities for our cloud security team is to provide a secure supply chain for all developers on the platform.",
+    slug: "cloud-security-shai-hulud",
+    image: image,
+    authors: ['karim'],
+    date: "2025-12-05",
+    tags: ["security", "supply-chain"],
+};
+
+One of the responsibilities for our cloud security team is to provide a secure
+supply chain for all developers on the platform. Our work is inspired by
+Google’s Shared Fate model, which means we and our customers collaborate
+on keeping the platform secure. Because of this we’ve kept an eye on the
+recent development of compromised npm packages, including the previous
+‘Shai-Hulud’ campaign.
+
+We were notified of the campaign early through a security company’s
+notification, and based on our immediate observations, we decided to act fast.
+
+## Our Initial Response
+This wasn’t our first rodeo. Based on recent npm package compromises, we were
+prepared. Our initial response focused on gaining an overview of the campaign
+to understand exactly what we were up against.
+
+We quickly learned that the attack spread through what was likely self-propagating
+malware (a.k.a. a worm). Seeing the GitHub repositories that were spreading
+secrets grow by more than a thousand per hour, we were confident this attack was
+ongoing, and time was of the essence.
+
+Through various vendor blog posts and by engaging with the community in the
+[Cloud Security Forum Slack](https://fwdcloudsec.org/forum/), we gained a 
+list of packages we knew were compromised and developed a stronger
+awareness of the ongoing campaign.
+
+## Reverse Engineering the Malware
+Using one of the compromised packages, we were able to download a sample of the
+malware that had been uploaded to npm. At this stage, there were no solid
+reports of what the malware was capable of. Since it was obfuscated, our
+initial response was to extract indicators (unique file hashes consistent
+across all packages) and initiate our process to de-obfuscate the malware.
+
+We gradually learned more about the malware and its capability to harvest
+additional secrets, making us aware of the potential blast radius and
+(Tactics, Techniques and Procedures) to look for in the cloud environment
+and on workstations.
+
+Our coordinated response with the rest of Telenor’s security organization led
+to this incident having no impact on Telenor’s cloud platform, as we were able
+to alert developers, monitor for compromised packages and were ready to respond
+in the event of a true positive.
+
+## About the Cloud Security team in Telenor Norway
+The Cloud Security team in Telenor Norway contributes to providing a secure and
+reliable platform. We build and maintain services for a secure supply chain,
+risk identification, mitigation, and threat detection for our Cloud Platform.
