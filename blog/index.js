@@ -1,3 +1,4 @@
+export * as AiSupportAgent from './08-ai-support-agent/index.mdx';
 export * as CloudSecurityShaiHulud from './07-cloud-security-shai-hulud/index.mdx';
 export * as SecurityResearcherSpotlight from './06-security-researcher-spotlight/index.mdx';
 export * as FaceForward from './05-face-forward/index.mdx';
