@@ -1,5 +1,6 @@
 import image from "./image.png";
 import architecture from "./architecture.jpg";
+import response from "./response.png";
 export const metadata = {
     title: "AI Support Agent",
     description: "Building an AI-powered support agent using RAG, Vertex AI, and Gemini to handle support requests with grounded, citation-backed responses.",
@@ -15,10 +16,10 @@ understand how our users are consuming our products. While users are often
 rightfully seeking out help or asking us questions, we have solid documentation
 that intends to answer most questions. We wanted to see if we could put that
 documentation better to work as part of our support workflow, through an
-Innovation Days project.
+[Innovation Days](https://cloud.telenor.no/blog/innovation-days) project.
 
 ## The Idea
-Anders Elton had an idea he put on the Innovation Days board: create a bot
+We had an idea he put on the Innovation Days board: create a bot
 capable of handling incoming support requests, with access to our internal
 documentation and support history through Retrieval-Augmented Generation (RAG)
 using Google Cloud Datastore and Vertex AI Search with the Gemini 2.5 Pro model.
@@ -57,18 +58,20 @@ our indexed docs, it says so rather than making something up. Every answer
 includes citation links back to the original documentation pages, so users can
 verify and explore further.
 
-We also prioritize official Nova documentation over Slack history, the indexed
+Through the prompt, we also provide an instruction to
+prioritize official Nova documentation over Slack history, the indexed
 conversations serve as supplementary context for questions the docs doesn't
 cover well.
 
 ## The Slack Bot
+<img src={response} alt="Shippy Response" />
 To build the Slack bot, we used the Slack Bolt framework. The bot monitors our
 #platform-support channel. When a user asks a question, it first runs the
 evaluation check, then queries Gemini 2.5 Pro with our documentation as
 grounding context, and responds in a thread with the answer and citation links.
 
-We also index historical Slack conversations from the support channel. A Cloud
-Run Job runs daily at 6 AM, fetching recent messages and loading them into a
+We also index historical Slack conversations from the support channel. A job
+runs daily at 6 AM, fetching recent messages and loading them into a
 separate Vertex AI Search datastore. This means the agent can reference not just
 official documentation, but also previous support conversations, with the intent
 of capturing tribal knowledge that never made it into the docs.
@@ -93,8 +96,8 @@ handling HTTPS.
 ## Architecture
 <img src={architecture} alt="Architecture diagram" />
 
-The whole system runs on Cloud Run, keeping costs low (we only pay when handling
-requests) and scaling automatically. Two Cloud Run Jobs handle the data
+The whole system runs on a container, keeping costs low (we only pay when handling
+requests) and scaling automatically. Two containers handle the data
 pipelines: one syncs documentation from our Docusaurus repository and another
 fetches historical Slack messages. Both feed into Vertex AI Search datastores
 that Gemini uses for the grounded responses.
