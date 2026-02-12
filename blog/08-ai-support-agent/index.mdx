@@ -11,8 +11,8 @@ export const metadata = {
     tags: ["innovation-days", "ai"],
 };
 
-Support is a tedious but required task, which allows us to learn from and
-understand how our users are consuming our products. While users are often
+Support is a tedious but necessary task, which allows us to learn from and
+understand how our users are consuming our products. While users are usually
 rightfully seeking out help or asking us questions, we have solid documentation
 that intends to answer most questions. We wanted to see if we could put that
 documentation better to work as part of our support workflow, through an
@@ -35,6 +35,10 @@ people. We had two people on Vertex AI and configuring and massaging our data.
 1 on infrastructure, 1 on Docusaurus chat and 1 on Slack integration.
 
 ## Designing the AI Client
+The first step was to configure our Vertex AI instance. Luckily this is relatively
+easy in Google Cloud, as we simply enabled the service and configured it with
+some simple options.
+
 With our Vertex AI instance configured and the data normalized and loaded into
 a datastore, we could create a Python client able to receive Slack messages or
 requests from a prompt embedded in Docusaurus.
@@ -47,7 +51,7 @@ that decides whether a message is actually a technical question worth answering.
 The evaluator checks if it's a deployment question, a configuration issue, or a
 request for documentation, which also ignores social messages, status updates,
 and requests directed at specific people. We also ask users to evaluate the
-response from the bot, by using a Slack reaction, this allows us to understand
+response from the bot, by using a Slack reaction (👍 / 👎 ), this allows us to understand
 if the answer actually helped so that we can improve the bot.
 
 ### Grounding and Citations
@@ -58,9 +62,8 @@ our indexed docs, it says so rather than making something up. Every answer
 includes citation links back to the original documentation pages, so users can
 verify and explore further.
 
-Through the prompt, we also provide an instruction to
-prioritize official Nova documentation over Slack history, the indexed
-conversations serve as supplementary context for questions the docs doesn't
+Through the prompt, we also prioritize official Nova documentation over Slack history, the indexed
+conversations serve as supplementary context for questions the docs don't
 cover well.
 
 ## The Slack Bot
