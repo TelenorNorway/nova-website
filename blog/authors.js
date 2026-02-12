@@ -1,8 +1,15 @@
 import eline from './authors/eline.png';
 import mats from './authors/mats.png';
 import karim from './authors/karim.png';
+import anders from './authors/anders.png';
 
 const authors = {
+  "anders": {
+    name: "Anders Elton",
+    role: "Tech Lead - Google Cloud",
+    image: anders,
+    link: "",
+  },
   "eline": {
     name: "Eline Henriksen",
     role: "Head of Product - Cloud Platforms",
