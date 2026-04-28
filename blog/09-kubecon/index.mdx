@@ -1,0 +1,248 @@
+import image from "./image.jpeg";
+
+export const metadata = {
+    title: "KubeCon: Scaling Platform as a Product",
+    description: "What we shared at KubeCon about scaling platform-as-a-product across many teams through communication, community, insight collection, and deliberate investment in internal tooling.",
+    slug: "kubecon",
+    image: image,
+    authors: ['eline', /*'jakub'*/],
+    date: "2026-05-10",
+    tags: ["kubecon", "platform-engineering"],
+};
+
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/h4gW9OcI6kg?si=HZ9z7c9KuxVpz3Fc"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+></iframe>
+
+## Our KubeCon Talk
+
+At KubeCon we shared a talk about a problem many platform teams run into once
+their internal platform starts succeeding: scale changes everything. It is one
+thing to build a useful platform product for a handful of teams. It is
+something else entirely to support dozens or hundreds of teams without drowning
+in support questions, feature requests, documentation gaps, and ad hoc
+prioritization.
+
+The talk used a slightly dramatic analogy from the battlefield of Gondor, but
+the point was familiar enough to anyone working in a large organization. When
+questions, requests, and incidents come from every direction, the challenge is
+no longer just building good technical capabilities. The challenge becomes
+creating systems around the platform that let the team scale its impact.
+
+eline spoke from our experience building Nova at Telenor, where the platform
+supports the equivalent of around 120 teams. Jakub complemented that with
+practical advice for teams that are earlier in their platform journey and want
+to show clear value from platform engineering investments.
+
+## Talk Overview
+
+The core message of the session was that platform-as-a-product is the right
+foundation, but product thinking alone is not enough when adoption grows. User
+interviews, roadmaps, and best practices still matter, but eventually the
+platform team needs mechanisms that scale communication, support, feedback, and
+continuous improvement.
+
+From our side, that meant treating each platform capability as a true product,
+not just a technical building block. A platform product needs documentation,
+support expectations, reliability commitments, and a clear story that helps
+users understand what the platform offers and how to use it.
+
+From Jakub's side, the message was equally pragmatic: if you are not yet at the
+stage where you have dedicated insight tooling or advanced analytics, you can
+still start by identifying repetitive developer pain, measuring wasted effort,
+and applying proven platform capabilities to remove it. That is often the
+fastest way to demonstrate return on investment.
+
+## Key Takeaways
+
+### Build a Community
+
+One of the most practical pieces of advice was also one of the simplest: not
+every platform question needs to be answered by the platform team.
+
+If all support flows directly to the people building the platform, scale becomes
+painful very quickly. A shared support channel can become much more than a queue
+for incoming requests. Over time it can become a self-service community where
+users answer each other's questions, share patterns, and surface better ways of
+using the platform.
+
+This helps in several ways. It reduces the support burden on the team, it
+spreads knowledge between users, and it gives the platform team a better view
+into how the platform is actually being consumed in practice. Some of the most
+useful insights come from watching how users help each other.
+
+### Focus on Communication
+
+If users do not know what your platform offers, they will ask. When that
+happens at scale, communication becomes part of the product surface.
+
+That is why we emphasized the importance of having a polished platform website,
+not just a collection of technical documents. A good platform front page should
+make the available products visible, explain what each one is for, and help
+users navigate quickly to the right capability.
+
+This matters because a platform product is broader than an API, a cluster, or a
+pipeline template. It also includes documentation, support, service levels, and
+operational clarity. Communicating that clearly makes the platform easier to
+adopt and easier to trust.
+
+### Capture and Prioritize Insights
+
+Platform teams receive ideas constantly: in Slack, in email, in hallway
+conversations, and from their own engineers. If these insights are not captured
+systematically, they are easy to lose and difficult to prioritize later.
+
+We recommended creating a dedicated place for suggestions and requests, ideally
+something that supports more than a simple issue backlog. A good insight system
+lets users see what has already been suggested, upvote ideas they care about,
+add context, and signal urgency. That gives the platform team stronger input
+when deciding what to build next.
+
+The quality of the discussion matters too. When users comment on each other's
+requests, the team gets a better understanding of the real problem behind the
+request rather than just the first proposed solution.
+
+### Spend Time to Save Time
+
+One of the strongest themes in the talk was that time savings rarely happen by
+accident. Teams need to deliberately invest time in improvements that will pay
+back later.
+
+For us, one example of that is Innovation Days: two focused days every couple
+of months where people can work on ideas that do not fit neatly into the normal
+delivery cycle. These projects can target internal friction, user pain points,
+or new ideas that deserve fast validation.
+
+That gives us a second learning track alongside regular product delivery. If an
+idea proves useful, it can move into the normal development cycle with evidence
+behind it rather than remaining a vague improvement wish.
+
+## A Practical Example: AI Support in Slack
+
+We used one concrete example in the talk to show what "invest to save time" can
+look like in practice. During one of our Innovation Days, engineers built a
+prototype for answering support questions in Slack with AI.
+
+The design was intentionally pragmatic. A smaller model first evaluates whether
+an incoming message is actually relevant to Nova and whether it should be
+answered at all. If the answer is yes, the request is forwarded to a larger
+model with access to our documentation and historical support conversations.
+
+That setup matters because not every message in a support channel deserves a
+response. By filtering first and answering second, we reduce noise while still
+making accumulated platform knowledge easier to access. The result is a support
+experience that can scale better without losing grounding in real platform
+documentation and prior answers.
+
+If you want more detail on that implementation, we have already written a
+separate post on the [AI Support Agent](https://cloud.telenor.no/blog/ai-support-agent).
+
+## Starting Smaller and Showing Value
+
+Jakub's part of the talk focused on how platform teams can begin this journey
+without needing a fully mature platform organization from day one.
+
+One useful framing comes from the idea of golden paths across domains like
+DevOps, MLOps, and DataOps. These domains often contain repetitive work that is
+valuable but not differentiating. When platform teams remove that repetition,
+they create measurable value for product teams.
+
+A concrete example from the talk was resource requests and limits in Kubernetes.
+If developers repeatedly spend time tuning these manually, that is a good
+candidate for platform improvement. Technologies like Vertical Pod Autoscaler
+and in-place pod resizing can reduce wasted effort and help teams right-size
+workloads automatically.
+
+The same logic applies to incident analysis. If you spend time categorizing
+incidents and find that a significant percentage come from predictable resource
+problems, that becomes both a product opportunity and a prevention opportunity.
+Instead of only handling the incidents, the platform team can remove a class of
+problems entirely.
+
+## Culture Scales the Platform Too
+
+Tooling alone does not solve the scaling problem. A large part of platform
+engineering is cultural: creating clarity, enabling collaboration, and building
+psychological safety so people can improve the platform together.
+
+That starts with communicating mission, vision, and product strategy clearly.
+Users need to understand where the platform is going and what problems it is
+trying to solve. It also means inviting people into improvement work, whether
+through innovation initiatives, feedback loops, or cross-functional
+collaboration around pain points.
+
+The talk also touched on servant leadership as a useful mindset for platform
+teams. A strong platform team does not only provide tooling. It creates the
+conditions for others to move faster, make safer decisions, and contribute to
+continuous improvement across the organization.
+
+## What Success Looks Like
+
+To ground the talk in more than principles, eline shared some of the survey
+signals we use to understand how Nova is perceived internally. At the time of
+the talk:
+
+- 87% of respondents said they were happy with Nova
+- 88% felt the platform was keeping up with technology
+- 95% said they trusted Nova security
+- 75% gave positive feedback on our documentation
+
+That last number was especially useful because it showed both progress and a
+clear area for improvement. Good documentation is essential when a platform
+team wants to scale without turning every task into a support conversation.
+
+## Reflections
+
+### From Jakub
+
+One of the strongest takeaways from Jakub's contribution was that platform
+teams do not need to wait for perfect maturity before they start acting like a
+product organization. Even simple analysis of recurring incidents or repetitive
+developer work can uncover opportunities with very visible impact.
+
+That is an important reminder because platform engineering can sometimes be
+presented as if it requires a large operating model, a full product function,
+and extensive tooling from the beginning. In practice, it often starts with
+identifying one painful repeated task, solving it well, and making the value
+visible.
+
+### From Eline
+
+Eline's message was that scaling a platform is as much about communication and
+organizational design as it is about technical excellence. A platform team can
+build excellent capabilities and still struggle if users do not know what
+exists, how to get help, or how to influence priorities.
+
+The strongest platform products tend to be the ones that create clarity around
+what they offer, make support and feedback visible, and continuously invest in
+the systems that reduce future friction.
+
+## Community Response
+
+The response at KubeCon was strong, especially because the topic resonated with
+teams dealing with the less glamorous side of platform growth: support load,
+documentation debt, prioritization noise, and the challenge of proving value.
+
+We had good conversations after the session around self-service support, how to
+structure insight collection, and how to balance platform investment with
+day-to-day delivery pressure. It was also clear that many teams are dealing
+with the same transition from building useful capabilities to operating a
+platform that can scale sustainably.
+
+## Looking Ahead
+
+KubeCon reinforced a direction we already believe in strongly: internal
+platforms need both strong technical foundations and strong product systems
+around them.
+
+We will keep investing in the parts of the platform that reduce friction at
+scale, especially communication, support, discoverability, and structured
+feedback loops. The more the platform can help users help themselves, the more
+time the team gets back to build the next layer of value.
